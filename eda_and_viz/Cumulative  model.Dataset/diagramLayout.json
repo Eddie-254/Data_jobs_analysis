@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 218
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "USA Data 1 (us_gov_analyst_jobs",
+          "nodeLineageTag": "5bf12175-b1b8-4c0c-a5ce-a10f2c1bc44c",
+          "size": {
+            "height": 273,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 344
+          },
+          "nodeIndex": "USA Data 2 (search_results)",
+          "nodeLineageTag": "92e0683e-2dce-4b89-8872-1640b57cbf18",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 44,
+            "y": 692
+          },
+          "nodeIndex": "USA Data 3 (us_jobs)",
+          "nodeLineageTag": "ad813c13-9ab6-4467-9d01-35170cbcb450",
+          "size": {
+            "height": 271,
+            "width": 222
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 759,
+            "y": 715
+          },
+          "nodeIndex": "UAE Data 1(uae_jobs)",
+          "nodeLineageTag": "f8bce0f3-cd9d-4db8-a73d-b158d82f95a5",
+          "size": {
+            "height": 275,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 810,
+            "y": 18
+          },
+          "nodeIndex": "UAE Data 2(uae_data_jobs)",
+          "nodeLineageTag": "bcef4566-8ecf-4408-9228-9f21ac05ca2f",
+          "size": {
+            "height": 277,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 423.21875,
+            "y": 218
+          },
+          "nodeIndex": "Appended Model",
+          "nodeLineageTag": "fe77cf03-be6d-4a2c-a758-6772d81551b6",
+          "size": {
+            "height": 360,
+            "width": 234
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

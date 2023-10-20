@@ -1,0 +1,2945 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"USA Data 1 (us_gov_analyst_jobs\",\"USA Data 2 (search_results)\",\"USA Data 3 (us_jobs)\",\"UAE Data 1(uae_jobs)\",\"UAE Data 2(uae_data_jobs)\",\"Appended Model\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.942.0 (23.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "a692d244-bfce-41ac-bf7b-5a3aa4cc6a41",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Job ID",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "toColumn": "Job ID",
+        "toTable": "USA Data 2 (search_results)"
+      },
+      {
+        "name": "20908447-e138-4b20-9c38-8eaf547e106a",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Job ID",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "toColumn": "Job ID",
+        "toTable": "UAE Data 1(uae_jobs)"
+      },
+      {
+        "name": "4f90e125-84bc-4698-9098-a7955188082c",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Job ID",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "toColumn": "Job ID",
+        "toTable": "UAE Data 2(uae_data_jobs)"
+      },
+      {
+        "name": "17f505ca-5ac4-46bd-b1ca-3718c3c00440",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "Job ID",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "toColumn": "Job ID",
+        "toTable": "USA Data 3 (us_jobs)"
+      },
+      {
+        "name": "9c9382d5-bf84-4ef9-9565-093669aba490",
+        "fromColumn": "Date Posted",
+        "fromTable": "UAE Data 2(uae_data_jobs)",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_c9650a36-d05d-4cfa-a3ce-15ba2c2651b5"
+      },
+      {
+        "name": "bc3aa7fb-d967-47a0-8acd-a3138e08fb4a",
+        "fromColumn": "Date Posted",
+        "fromTable": "USA Data 2 (search_results)",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_5f16bf78-4692-4088-918f-b37825c8edd1"
+      },
+      {
+        "name": "66f90c0d-8e6c-4b14-8882-3f13faba2ac6",
+        "fromColumn": "Date Posted",
+        "fromTable": "UAE Data 1(uae_jobs)",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_afb66b0a-32f7-478f-a310-1cbbee69fa51"
+      },
+      {
+        "name": "e71e9b97-ef0e-4af9-bc39-e2b31d136612",
+        "fromColumn": "Date Posted",
+        "fromTable": "USA Data 3 (us_jobs)",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_c129e496-748e-48c5-bd28-7ef49d354ca0"
+      },
+      {
+        "name": "95b28c59-92fa-4c7c-a709-45e7f43b6633",
+        "fromColumn": "Date Posted",
+        "fromTable": "Appended Model",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_397a19d7-e863-4fac-bfbb-87612879650f"
+      },
+      {
+        "name": "0074d567-baa0-4142-b027-2b53e7cc061e",
+        "fromColumn": "Date Posted",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_d04acf70-a08f-4996-a956-f2e3b5491239"
+      },
+      {
+        "name": "b95ab045-03dd-47e9-9684-4275f17eac87",
+        "fromColumn": "Job ID",
+        "fromTable": "Appended Model",
+        "toColumn": "Job ID",
+        "toTable": "USA Data 2 (search_results)"
+      },
+      {
+        "name": "9919b673-ad19-4cb6-909b-bb318f24251d",
+        "fromColumn": "Job ID",
+        "fromTable": "Appended Model",
+        "isActive": false,
+        "toColumn": "Job ID",
+        "toTable": "UAE Data 1(uae_jobs)"
+      },
+      {
+        "name": "0d4ea766-bf79-4c70-80c6-286306a647dd",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "City",
+        "fromTable": "UAE Data 2(uae_data_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "City",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "4b767687-1aa7-47ce-ae8c-467cc13d8299",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Country",
+        "fromTable": "UAE Data 2(uae_data_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Country",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "0e041b57-2419-4b2b-8dc9-5aeee397ad0c",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Job Description",
+        "fromTable": "UAE Data 2(uae_data_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Job Description",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "8aec169e-88fa-4616-8912-ddc401f51618",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "City",
+        "fromTable": "UAE Data 1(uae_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "City",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "23f215ac-93c8-4041-b874-cfea3fab2536",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Country",
+        "fromTable": "UAE Data 1(uae_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Country",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "75eed851-e950-4855-bf82-8a2f67c49fc5",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Job Description",
+        "fromTable": "UAE Data 1(uae_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Job Description",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "60817b5f-8a61-4774-b173-a9d279a6f5c9",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "City",
+        "fromTable": "USA Data 2 (search_results)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "City",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "e510aafc-1cd5-49db-847d-837dadab56da",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Country",
+        "fromTable": "USA Data 2 (search_results)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Country",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "55df8cbf-bb27-495c-afb4-4da05fd08e20",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "City",
+        "fromTable": "USA Data 3 (us_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "City",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "6192ab9c-577f-4e90-9f7e-8b9359cbd314",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Country",
+        "fromTable": "USA Data 3 (us_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Country",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "53db9a29-f908-431e-a101-fad09e14061d",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Job Title",
+        "fromTable": "USA Data 3 (us_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Job Title",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "e47e1b73-13cb-43e4-8c5c-512b58f86c66",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "State",
+        "fromTable": "USA Data 3 (us_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "State",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "f6b32a0d-8133-4693-bcb6-7223e7e5ac69",
+        "fromColumn": "City",
+        "fromTable": "Appended Model",
+        "isActive": false,
+        "toColumn": "City",
+        "toTable": "USA Data 1 (us_gov_analyst_jobs"
+      },
+      {
+        "name": "ec4d570e-689b-4978-ad7b-c0177a054629",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Country",
+        "fromTable": "USA Data 1 (us_gov_analyst_jobs",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Country",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "76da739b-586c-444f-9a2c-f101825ba2e3",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Job Title",
+        "fromTable": "UAE Data 2(uae_data_jobs)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Job Title",
+        "toTable": "Appended Model"
+      },
+      {
+        "name": "e183f8b6-0e58-450e-8ce6-9b7e11f87bdb",
+        "fromColumn": "Job ID",
+        "fromTable": "Appended Model",
+        "isActive": false,
+        "toColumn": "Job ID",
+        "toTable": "USA Data 1 (us_gov_analyst_jobs"
+      },
+      {
+        "name": "b0dcc497-b290-4a8f-b36e-cb0136254114",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Job Title",
+        "fromTable": "USA Data 2 (search_results)",
+        "isActive": false,
+        "toCardinality": "many",
+        "toColumn": "Job Title",
+        "toTable": "Appended Model"
+      }
+    ],
+    "sourceQueryCulture": "en-KE",
+    "tables": [
+      {
+        "name": "DateTableTemplate_eebcd2e9-d02e-410e-b0b0-3b3fb6f3c054",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "c4210093-d3ef-43e5-a36f-ff0f555617b2",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "62d42348-c922-4001-a1af-68f491dee89a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "c2e1da79-8a32-446b-b7f9-f3911dcddea9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "718e14ea-5b79-4972-9e94-778244ea7362",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "40d26bca-2824-4f99-b7dc-410e7a31f795",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "b5899fc3-663a-4bf7-be84-8e1597d0d580",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "7adfdcd4-9e60-428d-9248-fabfdf60aca8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "cf5626c5-5fe5-4c8c-9c67-7d1d5e2c2751",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "13663c6a-fdd4-47e0-9e01-1683e7d1bea5",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "47a2d033-0bd1-429c-a753-0d5f0378ef8a",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "a432d40a-b722-4bfb-b9ba-a0b2f2942c36",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2e7ffa40-8fe1-489f-97f4-c60f4bc0565d"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "61a90e2f-4287-4b17-836c-a81520d1d58e",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_eebcd2e9-d02e-410e-b0b0-3b3fb6f3c054",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "USA Data 2 (search_results)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c1ac853c-69f8-4573-8fb7-5ab0c952678e",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "416e28c9-82b8-4f59-ba10-049cdeecfb4a",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "e052cbcc-abe5-4aa1-a816-5ba2b414d969",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_5f16bf78-4692-4088-918f-b37825c8edd1"
+                },
+                "isDefault": true,
+                "relationship": "bc3aa7fb-d967-47a0-8acd-a3138e08fb4a"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9b2f9d91-9d76-4952-9b2f-744b331476b7",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc5cf4a4-4523-4cab-8b27-f0e1b2877ba5",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b3039ad4-5f6a-4d0d-bb73-525fd87e6a45",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b4ff2f12-c579-44be-a82e-f4ee0c116aff",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4a9e73b2-5af6-4fab-83b0-90e81583026d",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e8f8e2c1-1dda-4261-8ff4-df6e85b3421a",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "92e0683e-2dce-4b89-8872-1640b57cbf18",
+        "partitions": [
+          {
+            "name": "USA Data 2 (search_results)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"F:\\PROJECT CLONE\\Data_jobs_analysis\\web_scraping\\search_results.json\")),",
+                "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+                "    #\"Expanded parameters\" = Table.ExpandRecordColumn(#\"Converted to Table\", \"parameters\", {\"query\", \"page\", \"num_pages\", \"date_posted\", \"job_titles\"}, {\"parameters.query\", \"parameters.page\", \"parameters.num_pages\", \"parameters.date_posted\", \"parameters.job_titles\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded parameters\",{{\"status\", type text}, {\"request_id\", type text}, {\"parameters.query\", type text}, {\"parameters.page\", Int64.Type}, {\"parameters.num_pages\", Int64.Type}, {\"parameters.date_posted\", type text}, {\"parameters.job_titles\", type any}, {\"data\", type any}}),",
+                "    #\"Expanded data\" = Table.ExpandListColumn(#\"Changed Type\", \"data\"),",
+                "    #\"Expanded data1\" = Table.ExpandRecordColumn(#\"Expanded data\", \"data\", {\"employer_name\", \"employer_logo\", \"employer_website\", \"employer_company_type\", \"job_publisher\", \"job_id\", \"job_employment_type\", \"job_title\", \"job_apply_link\", \"job_apply_is_direct\", \"job_apply_quality_score\", \"apply_options\", \"job_description\", \"job_is_remote\", \"job_posted_at_timestamp\", \"job_posted_at_datetime_utc\", \"job_city\", \"job_state\", \"job_country\", \"job_latitude\", \"job_longitude\", \"job_benefits\", \"job_google_link\", \"job_offer_expiration_datetime_utc\", \"job_offer_expiration_timestamp\", \"job_required_experience\", \"job_required_skills\", \"job_required_education\", \"job_experience_in_place_of_education\", \"job_min_salary\", \"job_max_salary\", \"job_salary_currency\", \"job_salary_period\", \"job_highlights\", \"job_job_title\", \"job_posting_language\", \"job_onet_soc\", \"job_onet_job_zone\", \"job_occupational_categories\", \"job_naics_code\", \"job_naics_name\"}, {\"data.employer_name\", \"data.employer_logo\", \"data.employer_website\", \"data.employer_company_type\", \"data.job_publisher\", \"data.job_id\", \"data.job_employment_type\", \"data.job_title\", \"data.job_apply_link\", \"data.job_apply_is_direct\", \"data.job_apply_quality_score\", \"data.apply_options\", \"data.job_description\", \"data.job_is_remote\", \"data.job_posted_at_timestamp\", \"data.job_posted_at_datetime_utc\", \"data.job_city\", \"data.job_state\", \"data.job_country\", \"data.job_latitude\", \"data.job_longitude\", \"data.job_benefits\", \"data.job_google_link\", \"data.job_offer_expiration_datetime_utc\", \"data.job_offer_expiration_timestamp\", \"data.job_required_experience\", \"data.job_required_skills\", \"data.job_required_education\", \"data.job_experience_in_place_of_education\", \"data.job_min_salary\", \"data.job_max_salary\", \"data.job_salary_currency\", \"data.job_salary_period\", \"data.job_highlights\", \"data.job_job_title\", \"data.job_posting_language\", \"data.job_onet_soc\", \"data.job_onet_job_zone\", \"data.job_occupational_categories\", \"data.job_naics_code\", \"data.job_naics_name\"}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Expanded data1\", \"data.employer_company_type\", \"data.employer_company_type - Copy\"),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Duplicated Column\",{\"status\", \"request_id\", \"parameters.query\", \"parameters.page\", \"parameters.num_pages\", \"parameters.date_posted\", \"parameters.job_titles\", \"data.employer_name\", \"data.employer_logo\", \"data.employer_website\", \"data.employer_company_type\", \"data.job_publisher\", \"data.job_employment_type\", \"data.job_apply_link\", \"data.job_apply_is_direct\", \"data.job_apply_quality_score\", \"data.apply_options\", \"data.job_is_remote\", \"data.job_posted_at_timestamp\", \"data.job_latitude\", \"data.job_longitude\", \"data.job_google_link\", \"data.job_offer_expiration_datetime_utc\", \"data.job_offer_expiration_timestamp\", \"data.job_required_education\", \"data.job_experience_in_place_of_education\", \"data.job_min_salary\", \"data.job_max_salary\", \"data.job_salary_currency\", \"data.job_salary_period\", \"data.job_highlights\", \"data.job_job_title\", \"data.job_posting_language\", \"data.job_onet_soc\", \"data.job_onet_job_zone\", \"data.job_occupational_categories\", \"data.job_naics_code\", \"data.job_naics_name\", \"data.job_required_experience\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"data.job_posted_at_datetime_utc\", type datetimezone}}),",
+                "    #\"Split Column by Positions\" = Table.SplitColumn(Table.TransformColumnTypes(#\"Changed Type1\", {{\"data.job_posted_at_datetime_utc\", type text}}, \"en-KE\"), \"data.job_posted_at_datetime_utc\", Splitter.SplitTextByPositions({0, 11, 20}), {\"data.job_posted_at_datetime_utc.1\", \"data.job_posted_at_datetime_utc.2\", \"data.job_posted_at_datetime_utc.3\"}),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Split Column by Positions\",{{\"data.job_posted_at_datetime_utc.1\", type date}, {\"data.job_posted_at_datetime_utc.2\", type time}, {\"data.job_posted_at_datetime_utc.3\", type text}}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Changed Type2\",{\"data.job_posted_at_datetime_utc.2\", \"data.job_posted_at_datetime_utc.3\"}),",
+                "    #\"Removed Top Rows\" = Table.Skip(#\"Removed Columns1\",1),",
+                "    #\"Cleaned Text\" = Table.TransformColumns(#\"Removed Top Rows\",{{\"data.job_description\", Text.Clean, type text}}),",
+                "    #\"Filled Down\" = Table.FillDown(#\"Cleaned Text\",{\"data.job_city\"}),",
+                "    #\"Filled Up\" = Table.FillUp(#\"Filled Down\",{\"data.job_city\", \"data.job_state\"}),",
+                "    #\"Extracted Values\" = Table.TransformColumns(#\"Filled Up\", {\"data.job_benefits\", each Text.Combine(List.Transform(_, Text.From)), type text}),",
+                "    #\"Extracted Values1\" = Table.TransformColumns(#\"Extracted Values\", {\"data.job_required_skills\", each Text.Combine(List.Transform(_, Text.From)), type text}),",
+                "    #\"Replaced Errors\" = Table.ReplaceErrorValues(#\"Extracted Values1\", {{\"data.job_benefits\", \"Not Available\"}}),",
+                "    #\"Replaced Errors1\" = Table.ReplaceErrorValues(#\"Replaced Errors\", {{\"data.job_required_skills\", \"Null\"}}),",
+                "    #\"Cleaned Text1\" = Table.TransformColumns(#\"Replaced Errors1\",{{\"data.job_required_skills\", Text.Clean, type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Cleaned Text1\",\"<br>\",\" \",Replacer.ReplaceText,{\"data.job_required_skills\"}),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Replaced Value\",{\"data.job_id\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns2\", \"Index\", 1, 1, Int64.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Index\",{{\"Index\", \"Job ID\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Job ID\", \"data.job_title\", \"data.job_description\", \"data.job_posted_at_datetime_utc.1\", \"data.job_city\", \"data.job_state\", \"data.job_country\", \"data.job_benefits\", \"data.job_required_skills\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Reordered Columns\",{{\"data.job_posted_at_datetime_utc.1\", \"date posted\"}, {\"data.job_description\", \"job description\"}, {\"data.job_title\", \"job title\"}, {\"data.job_city\", \"city\"}, {\"data.job_state\", \"state\"}, {\"data.job_country\", \"country\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns1\",\"US\",\"United States\",Replacer.ReplaceText,{\"country\"}),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Replaced Value1\",{{\"job title\", \"Job Title\"}, {\"job description\", \"Job Description\"}, {\"date posted\", \"Date Posted\"}, {\"city\", \"City\"}, {\"state\", \"State\"}, {\"country\", \"Country\"}, {\"data.job_benefits\", \"Job Benefits\"}, {\"data.job_required_skills\", \"Required Skills\"}}),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Renamed Columns2\",{\"Job Benefits\"}),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Removed Columns3\",{{\"Required Skills\", \"Skill Requirements\"}, {\"data.employer_company_type - Copy\", \"industry\"}}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Renamed Columns3\",null,\"Unspecified\",Replacer.ReplaceValue,{\"industry\"}),",
+                "    #\"Renamed Columns4\" = Table.RenameColumns(#\"Replaced Value2\",{{\"industry\", \"Industry\"}})",
+                "in",
+                "    #\"Renamed Columns4\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "USA Data 3 (us_jobs)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b7df25d4-aa23-4601-bdfb-a15035e1d908",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ef967f0b-148a-4fb5-a0fb-ed40caf92902",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a624b1e7-af68-4f07-b329-e2cc788ac5ff",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "5f7c02ee-223e-4dbc-9839-ff63ed2d3f08",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_c129e496-748e-48c5-bd28-7ef49d354ca0"
+                },
+                "isDefault": true,
+                "relationship": "e71e9b97-ef0e-4af9-bc39-e2b31d136612"
+              }
+            ]
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5325eeec-f953-48fe-8b2a-d43357c56e9a",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b00aa37d-616c-4ace-8878-88179551178e",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a8867428-ce16-42b1-a206-e3127c46c09f",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3abd008d-d0c2-490d-aa05-32fa49319298",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7114ef0e-d0f0-450a-a056-747847e39b81",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ad813c13-9ab6-4467-9d01-35170cbcb450",
+        "partitions": [
+          {
+            "name": "USA Data 3 (us_jobs)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"F:\\PROJECT CLONE\\Data_jobs_analysis\\web_scraping\\us_jobs.json\")),",
+                "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+                "    #\"Expanded jobs\" = Table.ExpandListColumn(#\"Converted to Table\", \"jobs\"),",
+                "    #\"Expanded jobs1\" = Table.ExpandRecordColumn(#\"Expanded jobs\", \"jobs\", {\"id\", \"application_url\", \"company_name\", \"plain_text_description\", \"html_description\", \"publication_time\", \"source\", \"title\", \"salary\"}, {\"jobs.id\", \"jobs.application_url\", \"jobs.company_name\", \"jobs.plain_text_description\", \"jobs.html_description\", \"jobs.publication_time\", \"jobs.source\", \"jobs.title\", \"jobs.salary\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded jobs1\",{{\"jobs.id\", type text}, {\"jobs.application_url\", type text}, {\"jobs.company_name\", type text}, {\"jobs.plain_text_description\", type text}, {\"jobs.html_description\", type text}, {\"jobs.publication_time\", type datetime}, {\"jobs.source\", type text}, {\"jobs.title\", type text}, {\"jobs.salary\", type any}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"jobs.application_url\", \"jobs.company_name\", \"jobs.html_description\", \"jobs.salary\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns\", \"Index\", 1, 1, Int64.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Index\",{{\"Index\", \"job id\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"job id\", \"jobs.id\", \"jobs.plain_text_description\", \"jobs.publication_time\", \"jobs.source\", \"jobs.title\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Reordered Columns\",{\"jobs.source\", \"jobs.id\"}),",
+                "    #\"Trimmed Text\" = Table.TransformColumns(#\"Removed Columns1\",{{\"jobs.plain_text_description\", Text.Trim, type text}}),",
+                "    #\"Cleaned Text\" = Table.TransformColumns(#\"Trimmed Text\",{{\"jobs.plain_text_description\", Text.Clean, type text}}),",
+                "    #\"Reordered Columns1\" = Table.ReorderColumns(#\"Cleaned Text\",{\"job id\", \"jobs.title\", \"jobs.plain_text_description\", \"jobs.publication_time\"}),",
+                "    #\"Extracted Date\" = Table.TransformColumns(#\"Reordered Columns1\",{{\"jobs.publication_time\", DateTime.Date, type date}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Extracted Date\",{{\"jobs.plain_text_description\", \"Job Description\"}, {\"jobs.title\", \"Job Title\"}, {\"job id\", \"Job ID\"}, {\"jobs.publication_time\", \"Date\"}}),",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Renamed Columns1\", \"Country\", each if [Job ID] = 1 then \"United States\" else null),",
+                "    #\"Filled Down\" = Table.FillDown(#\"Added Conditional Column\",{\"Country\"}),",
+                "    #\"Added Index1\" = Table.AddIndexColumn(#\"Filled Down\", \"Index\", 0, 1, Int64.Type),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Added Index1\",{{\"Index\", type text}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Changed Type1\",\"0\",\"Washington\",Replacer.ReplaceText,{\"Index\"}),",
+                "    #\"Filled Down1\" = Table.FillDown(#\"Replaced Value\",{\"Index\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Filled Down1\",\"Washington\",\"\",Replacer.ReplaceText,{\"Index\"}),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Replaced Value1\",{{\"Index\", \"State\"}}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Renamed Columns2\",\"\",\"Washington\",Replacer.ReplaceValue,{\"State\"}),",
+                "    #\"Filled Up\" = Table.FillUp(#\"Replaced Value2\",{\"State\"}),",
+                "    #\"Filled Down2\" = Table.FillDown(#\"Filled Up\",{\"State\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Filled Down2\",\"1\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\"2\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\"3\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Replaced Value5\",\"4\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value7\" = Table.ReplaceValue(#\"Replaced Value6\",\"5\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value8\" = Table.ReplaceValue(#\"Replaced Value7\",\"6, 7, 8\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value9\" = Table.ReplaceValue(#\"Replaced Value8\",\"6\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value10\" = Table.ReplaceValue(#\"Replaced Value9\",\"7,8,9\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value11\" = Table.ReplaceValue(#\"Replaced Value10\",\"7\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value12\" = Table.ReplaceValue(#\"Replaced Value11\",\"8\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Replaced Value13\" = Table.ReplaceValue(#\"Replaced Value12\",\"9\",\"Washington\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Replaced Value13\", \"State\", \"State - Copy\"),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Duplicated Column\",{{\"State - Copy\", \"City\"}}),",
+                "    #\"Replaced Value14\" = Table.ReplaceValue(#\"Renamed Columns3\",\"Washington\",\"Tacoma\",Replacer.ReplaceText,{\"City\"}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Replaced Value14\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns4\" = Table.RenameColumns(#\"Duplicated Column1\",{{\"Country - Copy\", \"Required Skills\"}}),",
+                "    #\"Replaced Value15\" = Table.ReplaceValue(#\"Renamed Columns4\",\"United States\",\"Not Given\",Replacer.ReplaceText,{\"Required Skills\"}),",
+                "    #\"Renamed Columns5\" = Table.RenameColumns(#\"Replaced Value15\",{{\"Date\", \"Date Posted\"}, {\"Required Skills\", \"Skill Requirements\"}}),",
+                "    #\"Duplicated Column2\" = Table.DuplicateColumn(#\"Renamed Columns5\", \"Skill Requirements\", \"Skill Requirements - Copy\"),",
+                "    #\"Renamed Columns6\" = Table.RenameColumns(#\"Duplicated Column2\",{{\"Skill Requirements - Copy\", \"Industry\"}}),",
+                "    #\"Replaced Value16\" = Table.ReplaceValue(#\"Renamed Columns6\",\"Not Given\",\"Unspecified\",Replacer.ReplaceText,{\"Industry\"})",
+                "in",
+                "    #\"Replaced Value16\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "UAE Data 1(uae_jobs)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cc0081dd-4123-4c44-a88e-6d0e21e8f888",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fb2c4aea-3410-4e32-8f49-cf40e73c8f21",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "441f6121-5704-4139-bc2f-6bf96d3d2ce6",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "1b677af6-5397-48ad-9036-5acc8e602ac0",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_afb66b0a-32f7-478f-a310-1cbbee69fa51"
+                },
+                "isDefault": true,
+                "relationship": "66f90c0d-8e6c-4b14-8882-3f13faba2ac6"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b46f7eb9-1f4b-42e0-bfc4-7774476a34d4",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "33428315-936e-4839-9162-aa50f2180522",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5ed03744-9295-4e85-9faf-ca1bcede95cd",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "73a9729d-d9ac-4817-9349-9d9f3c3e5d08",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6765ef71-6147-4988-9eb1-29f85c30b1d5",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f8bce0f3-cd9d-4db8-a73d-b158d82f95a5",
+        "partitions": [
+          {
+            "name": "UAE Data 1(uae_jobs)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"F:\\PROJECT CLONE\\Data_jobs_analysis\\web_scraping\\uae_jobs.json\")),",
+                "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+                "    #\"Expanded data\" = Table.ExpandListColumn(#\"Converted to Table\", \"data\"),",
+                "    #\"Expanded data1\" = Table.ExpandRecordColumn(#\"Expanded data\", \"data\", {\"id\", \"job_code\", \"company_logo\", \"job_position_name\", \"employer\", \"vacancy_count\", \"min_salary\", \"max_salary\", \"currency\", \"salary_range\", \"min_experience\", \"max_experience\", \"experiences\", \"description\", \"job_profile\", \"posted_by\", \"start_date\", \"end_date\", \"date\", \"days\", \"time\", \"location\", \"country_name\", \"work_type\", \"employer_detail\", \"candidate_status\", \"skill_name\", \"skills_li\", \"job_status\", \"is_salary_visible\", \"created_at_diff_for_humans\", \"buttons\", \"detail_page_url\", \"date_posted\", \"whatsapp_link\"}, {\"data.id\", \"data.job_code\", \"data.company_logo\", \"data.job_position_name\", \"data.employer\", \"data.vacancy_count\", \"data.min_salary\", \"data.max_salary\", \"data.currency\", \"data.salary_range\", \"data.min_experience\", \"data.max_experience\", \"data.experiences\", \"data.description\", \"data.job_profile\", \"data.posted_by\", \"data.start_date\", \"data.end_date\", \"data.date\", \"data.days\", \"data.time\", \"data.location\", \"data.country_name\", \"data.work_type\", \"data.employer_detail\", \"data.candidate_status\", \"data.skill_name\", \"data.skills_li\", \"data.job_status\", \"data.is_salary_visible\", \"data.created_at_diff_for_humans\", \"data.buttons\", \"data.detail_page_url\", \"data.date_posted\", \"data.whatsapp_link\"}),",
+                "    #\"Expanded data.employer_detail\" = Table.ExpandRecordColumn(#\"Expanded data1\", \"data.employer_detail\", {\"id\", \"company_name\", \"company_logo\", \"website\", \"email\", \"business_description\", \"logo_url\"}, {\"data.employer_detail.id\", \"data.employer_detail.company_name\", \"data.employer_detail.company_logo\", \"data.employer_detail.website\", \"data.employer_detail.email\", \"data.employer_detail.business_description\", \"data.employer_detail.logo_url\"}),",
+                "    #\"Expanded pagination\" = Table.ExpandRecordColumn(#\"Expanded data.employer_detail\", \"pagination\", {\"page_url\", \"current_page_num\", \"first_page_url\", \"last_page_url\", \"next_page_url\", \"prev_page_url\", \"from\", \"last_page\", \"per_page\", \"to\", \"total\", \"page_count\"}, {\"pagination.page_url\", \"pagination.current_page_num\", \"pagination.first_page_url\", \"pagination.last_page_url\", \"pagination.next_page_url\", \"pagination.prev_page_url\", \"pagination.from\", \"pagination.last_page\", \"pagination.per_page\", \"pagination.to\", \"pagination.total\", \"pagination.page_count\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded pagination\",{{\"success\", type logical}, {\"message\", type text}, {\"data.id\", Int64.Type}, {\"data.job_code\", type text}, {\"data.company_logo\", type text}, {\"data.job_position_name\", type text}, {\"data.employer\", type text}, {\"data.vacancy_count\", Int64.Type}, {\"data.min_salary\", Int64.Type}, {\"data.max_salary\", Int64.Type}, {\"data.currency\", type text}, {\"data.salary_range\", type text}, {\"data.min_experience\", Int64.Type}, {\"data.max_experience\", Int64.Type}, {\"data.experiences\", type text}, {\"data.description\", type text}, {\"data.job_profile\", type any}, {\"data.posted_by\", type text}, {\"data.start_date\", type date}, {\"data.end_date\", type date}, {\"data.date\", type date}, {\"data.days\", Int64.Type}, {\"data.time\", type time}, {\"data.location\", type text}, {\"data.country_name\", type text}, {\"data.work_type\", type text}, {\"data.employer_detail.id\", Int64.Type}, {\"data.employer_detail.company_name\", type text}, {\"data.employer_detail.company_logo\", Int64.Type}, {\"data.employer_detail.website\", type text}, {\"data.employer_detail.email\", type text}, {\"data.employer_detail.business_description\", type text}, {\"data.employer_detail.logo_url\", type text}, {\"data.candidate_status\", type any}, {\"data.skill_name\", type text}, {\"data.skills_li\", type text}, {\"data.job_status\", type text}, {\"data.is_salary_visible\", Int64.Type}, {\"data.created_at_diff_for_humans\", type text}, {\"data.buttons\", type text}, {\"data.detail_page_url\", type text}, {\"data.date_posted\", type date}, {\"data.whatsapp_link\", type text}, {\"pagination.page_url\", type text}, {\"pagination.current_page_num\", Int64.Type}, {\"pagination.first_page_url\", type text}, {\"pagination.last_page_url\", type text}, {\"pagination.next_page_url\", type any}, {\"pagination.prev_page_url\", type any}, {\"pagination.from\", Int64.Type}, {\"pagination.last_page\", Int64.Type}, {\"pagination.per_page\", Int64.Type}, {\"pagination.to\", Int64.Type}, {\"pagination.total\", Int64.Type}, {\"pagination.page_count\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"success\", \"message\", \"data.job_code\", \"data.company_logo\", \"data.employer\", \"data.vacancy_count\", \"data.min_salary\", \"data.max_salary\", \"data.currency\", \"data.salary_range\", \"data.max_experience\", \"data.experiences\", \"data.min_experience\", \"data.job_profile\", \"data.posted_by\", \"data.start_date\", \"data.end_date\", \"data.days\", \"data.time\", \"data.work_type\", \"data.employer_detail.id\", \"data.employer_detail.company_name\", \"data.employer_detail.company_logo\", \"data.employer_detail.website\", \"data.employer_detail.email\", \"data.employer_detail.business_description\", \"data.employer_detail.logo_url\", \"data.candidate_status\", \"data.skills_li\", \"data.job_status\", \"data.is_salary_visible\", \"data.created_at_diff_for_humans\", \"data.buttons\", \"data.detail_page_url\", \"data.date_posted\", \"data.whatsapp_link\", \"pagination.page_url\", \"pagination.current_page_num\", \"pagination.first_page_url\", \"pagination.last_page_url\", \"pagination.next_page_url\", \"pagination.prev_page_url\", \"pagination.from\", \"pagination.last_page\", \"pagination.per_page\", \"pagination.to\", \"pagination.total\", \"pagination.page_count\", \"data.id\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns\", \"Index\", 0, 1, Int64.Type),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Index\",{\"Index\"}),",
+                "    #\"Added Index1\" = Table.AddIndexColumn(#\"Removed Columns1\", \"Index\", 1, 1, Int64.Type),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Added Index1\",{\"Index\", \"data.job_position_name\", \"data.description\", \"data.date\", \"data.location\", \"data.country_name\", \"data.skill_name\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Reordered Columns\",{{\"Index\", \"data.id\"}}),",
+                "    #\"Reordered Columns1\" = Table.ReorderColumns(#\"Renamed Columns\",{\"data.id\", \"data.job_position_name\", \"data.description\", \"data.skill_name\", \"data.date\", \"data.location\", \"data.country_name\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Reordered Columns1\",{{\"data.id\", \"Job ID\"}, {\"data.job_position_name\", \"Job Title\"}, {\"data.description\", \"Job Description\"}, {\"data.skill_name\", \"Skill Requirements\"}, {\"data.date\", \"Date\"}, {\"data.location\", \"City\"}, {\"data.country_name\", \"Country\"}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Renamed Columns1\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Duplicated Column\",{{\"Country - Copy\", \"State\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns2\",\"United Arab Emirates\",\"N/A\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Replaced Value\",{{\"Date\", \"Date Posted\"}}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Renamed Columns3\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns4\" = Table.RenameColumns(#\"Duplicated Column1\",{{\"Country - Copy\", \"Industry\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns4\",\"United Arab Emirates\",\"Unspecified\",Replacer.ReplaceText,{\"Industry\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "UAE Data 2(uae_data_jobs)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fd39ffdb-dc7a-4be0-b74d-4d2ac951dec4",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad028714-e5cf-4bc4-8167-5cc9bdf8e0c0",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4e54b554-3d80-44d0-acc1-69fc49d45500",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "06714c60-9a23-498d-8d76-3a821c5dbd8d",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "6da7166f-780b-4f38-847c-2fae369bdae5",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_c9650a36-d05d-4cfa-a3ce-15ba2c2651b5"
+                },
+                "isDefault": true,
+                "relationship": "9c9382d5-bf84-4ef9-9565-093669aba490"
+              }
+            ]
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5019e680-ec76-4b47-9767-5ded2c92f4da",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "80a1b98b-a4f8-4ed7-ad2a-f28bedf3d762",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "73cd4a27-daf9-4b44-8f46-215f205f1f8e",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "669e995f-77cd-418f-9387-d82bf471389e",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "bcef4566-8ecf-4408-9228-9f21ac05ca2f",
+        "partitions": [
+          {
+            "name": "UAE Data 2(uae_data_jobs)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"F:\\PROJECT CLONE\\Data_jobs_analysis\\web_scraping\\uae_data_jobs.json\")),",
+                "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+                "    #\"Expanded data\" = Table.ExpandListColumn(#\"Converted to Table\", \"data\"),",
+                "    #\"Expanded data1\" = Table.ExpandRecordColumn(#\"Expanded data\", \"data\", {\"id\", \"job_code\", \"company_logo\", \"job_position_name\", \"employer\", \"vacancy_count\", \"min_salary\", \"max_salary\", \"currency\", \"salary_range\", \"min_experience\", \"max_experience\", \"experiences\", \"description\", \"job_profile\", \"posted_by\", \"start_date\", \"end_date\", \"date\", \"days\", \"time\", \"location\", \"country_name\", \"work_type\", \"employer_detail\", \"candidate_status\", \"skill_name\", \"skills_li\", \"job_status\", \"is_salary_visible\", \"created_at_diff_for_humans\", \"buttons\", \"detail_page_url\", \"date_posted\", \"whatsapp_link\"}, {\"data.id\", \"data.job_code\", \"data.company_logo\", \"data.job_position_name\", \"data.employer\", \"data.vacancy_count\", \"data.min_salary\", \"data.max_salary\", \"data.currency\", \"data.salary_range\", \"data.min_experience\", \"data.max_experience\", \"data.experiences\", \"data.description\", \"data.job_profile\", \"data.posted_by\", \"data.start_date\", \"data.end_date\", \"data.date\", \"data.days\", \"data.time\", \"data.location\", \"data.country_name\", \"data.work_type\", \"data.employer_detail\", \"data.candidate_status\", \"data.skill_name\", \"data.skills_li\", \"data.job_status\", \"data.is_salary_visible\", \"data.created_at_diff_for_humans\", \"data.buttons\", \"data.detail_page_url\", \"data.date_posted\", \"data.whatsapp_link\"}),",
+                "    #\"Expanded data.employer_detail\" = Table.ExpandRecordColumn(#\"Expanded data1\", \"data.employer_detail\", {\"id\", \"company_name\", \"company_logo\", \"website\", \"email\", \"business_description\", \"logo_url\"}, {\"data.employer_detail.id\", \"data.employer_detail.company_name\", \"data.employer_detail.company_logo\", \"data.employer_detail.website\", \"data.employer_detail.email\", \"data.employer_detail.business_description\", \"data.employer_detail.logo_url\"}),",
+                "    #\"Expanded pagination\" = Table.ExpandRecordColumn(#\"Expanded data.employer_detail\", \"pagination\", {\"page_url\", \"current_page_num\", \"first_page_url\", \"last_page_url\", \"next_page_url\", \"prev_page_url\", \"from\", \"last_page\", \"per_page\", \"to\", \"total\", \"page_count\"}, {\"pagination.page_url\", \"pagination.current_page_num\", \"pagination.first_page_url\", \"pagination.last_page_url\", \"pagination.next_page_url\", \"pagination.prev_page_url\", \"pagination.from\", \"pagination.last_page\", \"pagination.per_page\", \"pagination.to\", \"pagination.total\", \"pagination.page_count\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded pagination\",{{\"success\", type logical}, {\"message\", type text}, {\"data.id\", Int64.Type}, {\"data.job_code\", type text}, {\"data.company_logo\", type text}, {\"data.job_position_name\", type text}, {\"data.employer\", type text}, {\"data.vacancy_count\", Int64.Type}, {\"data.min_salary\", Int64.Type}, {\"data.max_salary\", Int64.Type}, {\"data.currency\", type text}, {\"data.salary_range\", type text}, {\"data.min_experience\", Int64.Type}, {\"data.max_experience\", Int64.Type}, {\"data.experiences\", type text}, {\"data.description\", type text}, {\"data.job_profile\", type any}, {\"data.posted_by\", type text}, {\"data.start_date\", type date}, {\"data.end_date\", type date}, {\"data.date\", type date}, {\"data.days\", Int64.Type}, {\"data.time\", type time}, {\"data.location\", type text}, {\"data.country_name\", type text}, {\"data.work_type\", type text}, {\"data.employer_detail.id\", Int64.Type}, {\"data.employer_detail.company_name\", type text}, {\"data.employer_detail.company_logo\", Int64.Type}, {\"data.employer_detail.website\", type text}, {\"data.employer_detail.email\", type text}, {\"data.employer_detail.business_description\", type text}, {\"data.employer_detail.logo_url\", type text}, {\"data.candidate_status\", type any}, {\"data.skill_name\", type text}, {\"data.skills_li\", type text}, {\"data.job_status\", type text}, {\"data.is_salary_visible\", Int64.Type}, {\"data.created_at_diff_for_humans\", type text}, {\"data.buttons\", type text}, {\"data.detail_page_url\", type text}, {\"data.date_posted\", type date}, {\"data.whatsapp_link\", type text}, {\"pagination.page_url\", type text}, {\"pagination.current_page_num\", Int64.Type}, {\"pagination.first_page_url\", type text}, {\"pagination.last_page_url\", type text}, {\"pagination.next_page_url\", type any}, {\"pagination.prev_page_url\", type any}, {\"pagination.from\", Int64.Type}, {\"pagination.last_page\", Int64.Type}, {\"pagination.per_page\", Int64.Type}, {\"pagination.to\", Int64.Type}, {\"pagination.total\", Int64.Type}, {\"pagination.page_count\", Int64.Type}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"data.job_code\", \"data.company_logo\", \"data.employer\", \"data.vacancy_count\", \"data.min_salary\", \"data.max_salary\", \"data.currency\", \"data.salary_range\", \"data.min_experience\", \"data.max_experience\", \"data.experiences\", \"data.job_profile\", \"data.posted_by\", \"data.start_date\", \"data.end_date\", \"data.days\", \"data.time\", \"data.work_type\", \"data.employer_detail.id\", \"data.employer_detail.company_name\", \"data.employer_detail.company_logo\", \"data.employer_detail.website\", \"data.employer_detail.email\", \"data.employer_detail.business_description\", \"data.employer_detail.logo_url\", \"data.candidate_status\", \"data.skills_li\", \"data.job_status\", \"data.is_salary_visible\", \"data.created_at_diff_for_humans\", \"data.buttons\", \"data.detail_page_url\", \"data.whatsapp_link\", \"pagination.page_url\", \"pagination.current_page_num\", \"pagination.first_page_url\", \"pagination.last_page_url\", \"pagination.next_page_url\", \"pagination.prev_page_url\", \"pagination.from\", \"pagination.last_page\", \"pagination.per_page\", \"pagination.to\", \"pagination.total\", \"pagination.page_count\", \"success\", \"message\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Removed Columns\", \"Index\", 1, 1, Int64.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Index\",{{\"Index\", \"Job Id\"}}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Job Id\", \"data.id\", \"data.job_position_name\", \"data.description\", \"data.date\", \"data.location\", \"data.country_name\", \"data.skill_name\", \"data.date_posted\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Reordered Columns\",{\"data.id\", \"data.date_posted\"}),",
+                "    #\"Reordered Columns1\" = Table.ReorderColumns(#\"Removed Columns1\",{\"Job Id\", \"data.job_position_name\", \"data.description\", \"data.skill_name\", \"data.date\", \"data.location\", \"data.country_name\"}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Reordered Columns1\",{{\"Job Id\", \"Job ID\"}, {\"data.job_position_name\", \"Job Title\"}, {\"data.description\", \"Job Description\"}, {\"data.skill_name\", \"Skill Requirements\"}, {\"data.date\", \"Date\"}, {\"data.location\", \"City\"}, {\"data.country_name\", \"Country\"}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Renamed Columns1\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Duplicated Column\",{{\"Country - Copy\", \"STATE\"}}),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns2\",\"United Arab Emirates\",\"N/A\",Replacer.ReplaceText,{\"STATE\"}),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Replaced Value\",{{\"STATE\", \"State\"}, {\"Date\", \"Date Posted\"}}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Renamed Columns3\", \"State\", \"State - Copy\"),",
+                "    #\"Renamed Columns4\" = Table.RenameColumns(#\"Duplicated Column1\",{{\"State - Copy\", \"Industry\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns4\",\"N/A\",\"Unspecified\",Replacer.ReplaceText,{\"Industry\"})",
+                "in",
+                "    #\"Replaced Value1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "USA Data 1 (us_gov_analyst_jobs",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7e846c34-b336-4964-a92e-072752ed9c82",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72b28ec0-7ae0-4540-9155-709165d9d8d0",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e350c063-8679-470e-b3bc-33959ba71cf7",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a2eeccab-0858-4396-bed9-327658aa0ba2",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6cd32a99-50a2-4733-aa67-063b631e395c",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "012c5807-2870-4ea7-8a9b-f6f1f6624838",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_d04acf70-a08f-4996-a956-f2e3b5491239"
+                },
+                "isDefault": true,
+                "relationship": "0074d567-baa0-4142-b027-2b53e7cc061e"
+              }
+            ]
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f56d2e53-c6f6-4266-98c2-008cc3a207a1",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "162db15d-89f7-4822-be91-41ef697f1a8e",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "55911820-3b62-45c8-b001-5ac4e6d7ec30",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5bf12175-b1b8-4c0c-a5ce-a10f2c1bc44c",
+        "partitions": [
+          {
+            "name": "USA Data 1 (us_gov_analyst_jobs",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Json.Document(File.Contents(\"F:\\PROJECT CLONE\\Data_jobs_analysis\\web_scraping\\us_gov_analyst_jobs.json\")),",
+                "    #\"Converted to Table\" = Table.FromRecords({Source}),",
+                "    #\"Expanded Pager\" = Table.ExpandRecordColumn(#\"Converted to Table\", \"Pager\", {\"IsPaged\", \"NumberOfPages\", \"NumberOfItems\", \"ItemsPerPage\", \"IsUnpaged\", \"CurrentPageIndex\", \"NextPageIndex\", \"LastPageIndex\", \"FirstPageIndex\", \"UseCurrentRequestPath\", \"HasNextPage\", \"HasPreviousPage\", \"PreviousPageIndex\", \"IsSegmented\", \"IsEmpty\", \"IsFirstSegment\", \"IsLastSegment\", \"FirstPageItem\", \"LastPageItem\", \"TotalItems\"}, {\"Pager.IsPaged\", \"Pager.NumberOfPages\", \"Pager.NumberOfItems\", \"Pager.ItemsPerPage\", \"Pager.IsUnpaged\", \"Pager.CurrentPageIndex\", \"Pager.NextPageIndex\", \"Pager.LastPageIndex\", \"Pager.FirstPageIndex\", \"Pager.UseCurrentRequestPath\", \"Pager.HasNextPage\", \"Pager.HasPreviousPage\", \"Pager.PreviousPageIndex\", \"Pager.IsSegmented\", \"Pager.IsEmpty\", \"Pager.IsFirstSegment\", \"Pager.IsLastSegment\", \"Pager.FirstPageItem\", \"Pager.LastPageItem\", \"Pager.TotalItems\"}),",
+                "    #\"Expanded f\" = Table.ExpandRecordColumn(#\"Expanded Pager\", \"f\", {\"ri\", \"ti\", \"rmi\", \"j\", \"d\", \"a\", \"ws\", \"wt\", \"sc\", \"ps\", \"t\", \"hp\", \"mco\"}, {\"f.ri\", \"f.ti\", \"f.rmi\", \"f.j\", \"f.d\", \"f.a\", \"f.ws\", \"f.wt\", \"f.sc\", \"f.ps\", \"f.t\", \"f.hp\", \"f.mco\"}),",
+                "    #\"Expanded f.ri\" = Table.ExpandRecordColumn(#\"Expanded f\", \"f.ri\", {\"relocation\"}, {\"f.ri.relocation\"}),",
+                "    #\"Expanded f.ti\" = Table.ExpandRecordColumn(#\"Expanded f.ri\", \"f.ti\", {\"telework\"}, {\"f.ti.telework\"}),",
+                "    #\"Expanded f.rmi\" = Table.ExpandRecordColumn(#\"Expanded f.ti\", \"f.rmi\", {\"0\", \"1\"}, {\"f.rmi.0\", \"f.rmi.1\"}),",
+                "    #\"Expanded f.j\" = Table.ExpandRecordColumn(#\"Expanded f.rmi\", \"f.j\", {\"0343\", \"0560\", \"2210\", \"0301\", \"0501\", \"1515\", \"1102\", \"0132\", \"0801\", \"0101\", \"1101\", \"1160\", \"0830\", \"0110\", \"0896\", \"1301\", \"0344\", \"0850\", \"0401\", \"0810\", \"0819\", \"1320\", \"0020\", \"0671\", \"0808\", \"0193\", \"0685\", \"0828\", \"0854\", \"0855\", \"1350\", \"1550\", \"0512\", \"2003\", \"0669\", \"1520\", \"0861\", \"0303\", \"0340\", \"1805\", \"0610\", \"1530\", \"5201\", \"1801\", \"0201\", \"0306\", \"0399\", \"0028\", \"0802\", \"0930\", \"1310\", \"0160\", \"0341\", \"0602\", \"0803\", \"0804\", \"0893\", \"1529\", \"1730\", \"2005\", \"2110\", \"0080\", \"0089\", \"0503\", \"0511\", \"0806\", \"0840\", \"0901\", \"0967\", \"1109\", \"1152\", \"1169\", \"1306\", \"1560\", \"1825\", \"2101\", \"2181\", \"0006\", \"0099\", \"0130\", \"0150\", \"0203\", \"0342\", \"0570\", \"0599\", \"0620\", \"0807\", \"0809\", \"0856\", \"0858\", \"0881\", \"0890\", \"1165\", \"1210\", \"1371\", \"1410\", \"1501\", \"1601\", \"1810\", \"1910\"}, {\"f.j.0343\", \"f.j.0560\", \"f.j.2210\", \"f.j.0301\", \"f.j.0501\", \"f.j.1515\", \"f.j.1102\", \"f.j.0132\", \"f.j.0801\", \"f.j.0101\", \"f.j.1101\", \"f.j.1160\", \"f.j.0830\", \"f.j.0110\", \"f.j.0896\", \"f.j.1301\", \"f.j.0344\", \"f.j.0850\", \"f.j.0401\", \"f.j.0810\", \"f.j.0819\", \"f.j.1320\", \"f.j.0020\", \"f.j.0671\", \"f.j.0808\", \"f.j.0193\", \"f.j.0685\", \"f.j.0828\", \"f.j.0854\", \"f.j.0855\", \"f.j.1350\", \"f.j.1550\", \"f.j.0512\", \"f.j.2003\", \"f.j.0669\", \"f.j.1520\", \"f.j.0861\", \"f.j.0303\", \"f.j.0340\", \"f.j.1805\", \"f.j.0610\", \"f.j.1530\", \"f.j.5201\", \"f.j.1801\", \"f.j.0201\", \"f.j.0306\", \"f.j.0399\", \"f.j.0028\", \"f.j.0802\", \"f.j.0930\", \"f.j.1310\", \"f.j.0160\", \"f.j.0341\", \"f.j.0602\", \"f.j.0803\", \"f.j.0804\", \"f.j.0893\", \"f.j.1529\", \"f.j.1730\", \"f.j.2005\", \"f.j.2110\", \"f.j.0080\", \"f.j.0089\", \"f.j.0503\", \"f.j.0511\", \"f.j.0806\", \"f.j.0840\", \"f.j.0901\", \"f.j.0967\", \"f.j.1109\", \"f.j.1152\", \"f.j.1169\", \"f.j.1306\", \"f.j.1560\", \"f.j.1825\", \"f.j.2101\", \"f.j.2181\", \"f.j.0006\", \"f.j.0099\", \"f.j.0130\", \"f.j.0150\", \"f.j.0203\", \"f.j.0342\", \"f.j.0570\", \"f.j.0599\", \"f.j.0620\", \"f.j.0807\", \"f.j.0809\", \"f.j.0856\", \"f.j.0858\", \"f.j.0881\", \"f.j.0890\", \"f.j.1165\", \"f.j.1210\", \"f.j.1371\", \"f.j.1410\", \"f.j.1501\", \"f.j.1601\", \"f.j.1810\", \"f.j.1910\"}),",
+                "    #\"Expanded f.d\" = Table.ExpandRecordColumn(#\"Expanded f.j\", \"f.d\", {\"DD\", \"TR\", \"AR\", \"AF\", \"VA\", \"NV\", \"AF00\", \"HS\", \"OT\", \"AR00\", \"DD00\", \"HE\", \"TD\", \"AG\", \"IN\", \"DJ\", \"DN\", \"HU\", \"CM\", \"HS00\", \"HU00\", \"IN00\", \"NV00\", \"GS\", \"HE00\", \"JL\", \"LL\", \"ST\", \"TR00\", \"AG00\", \"JL00\", \"LL00\", \"DL\", \"FQ\", \"CM00\", \"DN00\", \"GS00\", \"ED\", \"NN\", \"NN00\", \"DJ00\", \"EOP\", \"ZZ\"}, {\"f.d.DD\", \"f.d.TR\", \"f.d.AR\", \"f.d.AF\", \"f.d.VA\", \"f.d.NV\", \"f.d.AF00\", \"f.d.HS\", \"f.d.OT\", \"f.d.AR00\", \"f.d.DD00\", \"f.d.HE\", \"f.d.TD\", \"f.d.AG\", \"f.d.IN\", \"f.d.DJ\", \"f.d.DN\", \"f.d.HU\", \"f.d.CM\", \"f.d.HS00\", \"f.d.HU00\", \"f.d.IN00\", \"f.d.NV00\", \"f.d.GS\", \"f.d.HE00\", \"f.d.JL\", \"f.d.LL\", \"f.d.ST\", \"f.d.TR00\", \"f.d.AG00\", \"f.d.JL00\", \"f.d.LL00\", \"f.d.DL\", \"f.d.FQ\", \"f.d.CM00\", \"f.d.DN00\", \"f.d.GS00\", \"f.d.ED\", \"f.d.NN\", \"f.d.NN00\", \"f.d.DJ00\", \"f.d.EOP\", \"f.d.ZZ\"}),",
+                "    #\"Expanded f.a\" = Table.ExpandRecordColumn(#\"Expanded f.d\", \"f.a\", {\"TR93\", \"VATA\", \"AFNG\", \"ARNG\", \"ARCE\", \"HSCB\", \"AF00\", \"HS00\", \"ARBA\", \"NV24\", \"AF1M\", \"DD07\", \"TD03\", \"HE36\", \"VALA\", \"DN00\", \"NV27\", \"OI00\", \"AF1C\", \"NV12\", \"NV19\", \"TR91\", \"DD63\", \"HSAC\", \"NV70\", \"AR2A\", \"ARAS\", \"ARHR\", \"DD01\", \"DD02\", \"FD00\", \"NV11\", \"ST00\", \"ARAT\", \"ARJA\", \"ARXD\", \"CI00\", \"CM54\", \"HSAB\", \"NV60\", \"SB00\", \"ARTC\", \"DD83\", \"DJ01\", \"HE39\", \"HSCA\", \"HUMM\", \"IN08\", \"JL04\", \"NV23\", \"TD00\", \"AF13\", \"AF1L\", \"AF1Y\", \"AGFA\", \"CM63\", \"DD04\", \"HE10\", \"HE34\", \"HSAA\", \"HUDD\", \"NU00\", \"NV22\", \"NV52\", \"NV76\", \"TRFD\", \"AF3D\", \"ARAF\", \"DJ09\", \"HSBE\", \"AF0M\", \"AG16\", \"AG99\", \"ARFC\", \"ARX6\", \"DD35\", \"DLPE\", \"DN03\", \"FQ00\", \"GS03\", \"GS30\", \"HE32\", \"HSBD\", \"IN05\", \"IN07\", \"NF00\", \"NV25\", \"TD01\", \"AF0R\", \"AF4S\", \"AF4W\", \"AG11\", \"AG34\", \"AM00\", \"ARE1\", \"ARHC\", \"ARSA\", \"ARSP\", \"ARX2\", \"ARX8\", \"ARXC\", \"BG00\", \"CM55\", \"DD11\", \"DD12\", \"DD16\", \"DD26\", \"DD60\", \"DD61\", \"DJ08\", \"DNNN\", \"FRFT\", \"HE31\", \"HE37\", \"HE38\", \"HUKK\", \"HUPP\", \"HUQQ\", \"LC00\", \"LG00\", \"NV33\", \"OM00\", \"RO00\", \"SE00\", \"SM01\", \"VAPA\", \"AF0D\", \"AF0J\", \"AF34\", \"AF3T\", \"AF5D\", \"AF6F\", \"AG07\", \"AG30\", \"AP00\", \"AR3A\", \"ARAE\", \"ARGB\", \"ARJ1\", \"ARMC\", \"ARP1\", \"ARSB\", \"ARX7\", \"ARXT\", \"CU00\", \"DD27\", \"DD48\", \"DD53\", \"DJ06\", \"DJ07\", \"DJ15\", \"EE00\", \"GB00\", \"GS00\", \"HE70\", \"IN10\", \"IN15\", \"IN26\", \"IN27\", \"JL02\", \"LD00\", \"NN10\", \"NV30\", \"NV74\", \"RF00\", \"SM03\", \"TD04\", \"TD09\", \"TRAI\", \"AF0B\", \"AF1B\", \"AF3Q\", \"AF4C\", \"AF4D\", \"AF4G\", \"AF4V\", \"AG10\", \"AG18\", \"AG90\", \"AGCR\", \"AN00\", \"ARCS\", \"ARE3\", \"ARFB\", \"ARSE\", \"ARSJ\", \"ARXA\", \"ARXB\", \"CM53\", \"CM56\", \"CM57\", \"DD05\", \"DD21\", \"DD80\", \"DJ02\", \"DJ03\", \"DJ12\", \"DLSL\", \"DNFE\", \"DNWP\", \"EDED\", \"EDEN\", \"EDER\", \"FC00\", \"FQ02\", \"FT00\", \"GS26\", \"HE11\", \"HFHA\", \"HFHI\", \"HSAE\", \"HSBB\", \"HSBC\", \"HUEE\", \"IN06\", \"IN29\", \"LA00\", \"NN72\", \"NV00\", \"NV18\", \"PO01\", \"RH00\", \"TB00\", \"TC00\", \"TD05\", \"TD10\", \"TD17\", \"TN00\", \"TRAJ\", \"TW00\", \"VAAJ\", \"VABF\", \"VADD\", \"VADG\", \"VAEB\", \"VAHA\", \"VAKB\", \"XPDS\"}, {\"f.a.TR93\", \"f.a.VATA\", \"f.a.AFNG\", \"f.a.ARNG\", \"f.a.ARCE\", \"f.a.HSCB\", \"f.a.AF00\", \"f.a.HS00\", \"f.a.ARBA\", \"f.a.NV24\", \"f.a.AF1M\", \"f.a.DD07\", \"f.a.TD03\", \"f.a.HE36\", \"f.a.VALA\", \"f.a.DN00\", \"f.a.NV27\", \"f.a.OI00\", \"f.a.AF1C\", \"f.a.NV12\", \"f.a.NV19\", \"f.a.TR91\", \"f.a.DD63\", \"f.a.HSAC\", \"f.a.NV70\", \"f.a.AR2A\", \"f.a.ARAS\", \"f.a.ARHR\", \"f.a.DD01\", \"f.a.DD02\", \"f.a.FD00\", \"f.a.NV11\", \"f.a.ST00\", \"f.a.ARAT\", \"f.a.ARJA\", \"f.a.ARXD\", \"f.a.CI00\", \"f.a.CM54\", \"f.a.HSAB\", \"f.a.NV60\", \"f.a.SB00\", \"f.a.ARTC\", \"f.a.DD83\", \"f.a.DJ01\", \"f.a.HE39\", \"f.a.HSCA\", \"f.a.HUMM\", \"f.a.IN08\", \"f.a.JL04\", \"f.a.NV23\", \"f.a.TD00\", \"f.a.AF13\", \"f.a.AF1L\", \"f.a.AF1Y\", \"f.a.AGFA\", \"f.a.CM63\", \"f.a.DD04\", \"f.a.HE10\", \"f.a.HE34\", \"f.a.HSAA\", \"f.a.HUDD\", \"f.a.NU00\", \"f.a.NV22\", \"f.a.NV52\", \"f.a.NV76\", \"f.a.TRFD\", \"f.a.AF3D\", \"f.a.ARAF\", \"f.a.DJ09\", \"f.a.HSBE\", \"f.a.AF0M\", \"f.a.AG16\", \"f.a.AG99\", \"f.a.ARFC\", \"f.a.ARX6\", \"f.a.DD35\", \"f.a.DLPE\", \"f.a.DN03\", \"f.a.FQ00\", \"f.a.GS03\", \"f.a.GS30\", \"f.a.HE32\", \"f.a.HSBD\", \"f.a.IN05\", \"f.a.IN07\", \"f.a.NF00\", \"f.a.NV25\", \"f.a.TD01\", \"f.a.AF0R\", \"f.a.AF4S\", \"f.a.AF4W\", \"f.a.AG11\", \"f.a.AG34\", \"f.a.AM00\", \"f.a.ARE1\", \"f.a.ARHC\", \"f.a.ARSA\", \"f.a.ARSP\", \"f.a.ARX2\", \"f.a.ARX8\", \"f.a.ARXC\", \"f.a.BG00\", \"f.a.CM55\", \"f.a.DD11\", \"f.a.DD12\", \"f.a.DD16\", \"f.a.DD26\", \"f.a.DD60\", \"f.a.DD61\", \"f.a.DJ08\", \"f.a.DNNN\", \"f.a.FRFT\", \"f.a.HE31\", \"f.a.HE37\", \"f.a.HE38\", \"f.a.HUKK\", \"f.a.HUPP\", \"f.a.HUQQ\", \"f.a.LC00\", \"f.a.LG00\", \"f.a.NV33\", \"f.a.OM00\", \"f.a.RO00\", \"f.a.SE00\", \"f.a.SM01\", \"f.a.VAPA\", \"f.a.AF0D\", \"f.a.AF0J\", \"f.a.AF34\", \"f.a.AF3T\", \"f.a.AF5D\", \"f.a.AF6F\", \"f.a.AG07\", \"f.a.AG30\", \"f.a.AP00\", \"f.a.AR3A\", \"f.a.ARAE\", \"f.a.ARGB\", \"f.a.ARJ1\", \"f.a.ARMC\", \"f.a.ARP1\", \"f.a.ARSB\", \"f.a.ARX7\", \"f.a.ARXT\", \"f.a.CU00\", \"f.a.DD27\", \"f.a.DD48\", \"f.a.DD53\", \"f.a.DJ06\", \"f.a.DJ07\", \"f.a.DJ15\", \"f.a.EE00\", \"f.a.GB00\", \"f.a.GS00\", \"f.a.HE70\", \"f.a.IN10\", \"f.a.IN15\", \"f.a.IN26\", \"f.a.IN27\", \"f.a.JL02\", \"f.a.LD00\", \"f.a.NN10\", \"f.a.NV30\", \"f.a.NV74\", \"f.a.RF00\", \"f.a.SM03\", \"f.a.TD04\", \"f.a.TD09\", \"f.a.TRAI\", \"f.a.AF0B\", \"f.a.AF1B\", \"f.a.AF3Q\", \"f.a.AF4C\", \"f.a.AF4D\", \"f.a.AF4G\", \"f.a.AF4V\", \"f.a.AG10\", \"f.a.AG18\", \"f.a.AG90\", \"f.a.AGCR\", \"f.a.AN00\", \"f.a.ARCS\", \"f.a.ARE3\", \"f.a.ARFB\", \"f.a.ARSE\", \"f.a.ARSJ\", \"f.a.ARXA\", \"f.a.ARXB\", \"f.a.CM53\", \"f.a.CM56\", \"f.a.CM57\", \"f.a.DD05\", \"f.a.DD21\", \"f.a.DD80\", \"f.a.DJ02\", \"f.a.DJ03\", \"f.a.DJ12\", \"f.a.DLSL\", \"f.a.DNFE\", \"f.a.DNWP\", \"f.a.EDED\", \"f.a.EDEN\", \"f.a.EDER\", \"f.a.FC00\", \"f.a.FQ02\", \"f.a.FT00\", \"f.a.GS26\", \"f.a.HE11\", \"f.a.HFHA\", \"f.a.HFHI\", \"f.a.HSAE\", \"f.a.HSBB\", \"f.a.HSBC\", \"f.a.HUEE\", \"f.a.IN06\", \"f.a.IN29\", \"f.a.LA00\", \"f.a.NN72\", \"f.a.NV00\", \"f.a.NV18\", \"f.a.PO01\", \"f.a.RH00\", \"f.a.TB00\", \"f.a.TC00\", \"f.a.TD05\", \"f.a.TD10\", \"f.a.TD17\", \"f.a.TN00\", \"f.a.TRAJ\", \"f.a.TW00\", \"f.a.VAAJ\", \"f.a.VABF\", \"f.a.VADD\", \"f.a.VADG\", \"f.a.VAEB\", \"f.a.VAHA\", \"f.a.VAKB\", \"f.a.XPDS\"}),",
+                "    #\"Expanded f.ws\" = Table.ExpandRecordColumn(#\"Expanded f.a\", \"f.ws\", {\"1\", \"6\", \"4\"}, {\"f.ws.1\", \"f.ws.6\", \"f.ws.4\"}),",
+                "    #\"Expanded f.wt\" = Table.ExpandRecordColumn(#\"Expanded f.ws\", \"f.wt\", {\"15317\", \"15319\", \"15318\", \"15327\", \"15320\", \"15321\", \"15668\", \"15326\", \"15328\", \"15667\"}, {\"f.wt.15317\", \"f.wt.15319\", \"f.wt.15318\", \"f.wt.15327\", \"f.wt.15320\", \"f.wt.15321\", \"f.wt.15668\", \"f.wt.15326\", \"f.wt.15328\", \"f.wt.15667\"}),",
+                "    #\"Expanded f.sc\" = Table.ExpandRecordColumn(#\"Expanded f.wt\", \"f.sc\", {\"0\", \"2\", \"8\", \"4\", \"3\", \"1\", \"7\", \"5\"}, {\"f.sc.0\", \"f.sc.2\", \"f.sc.8\", \"f.sc.4\", \"f.sc.3\", \"f.sc.1\", \"f.sc.7\", \"f.sc.5\"}),",
+                "    #\"Expanded f.ps\" = Table.ExpandRecordColumn(#\"Expanded f.sc\", \"f.ps\", {\"1\", \"5\", \"2\", \"4\", \"6\", \"3\", \"7\"}, {\"f.ps.1\", \"f.ps.5\", \"f.ps.2\", \"f.ps.4\", \"f.ps.6\", \"f.ps.3\", \"f.ps.7\"}),",
+                "    #\"Expanded f.t\" = Table.ExpandRecordColumn(#\"Expanded f.ps\", \"f.t\", {\"1\", \"2\", \"0\", \"5\", \"-1\", \"7\", \"8\"}, {\"f.t.1\", \"f.t.2\", \"f.t.0\", \"f.t.5\", \"f.t.-1\", \"f.t.7\", \"f.t.8\"}),",
+                "    #\"Expanded f.hp\" = Table.ExpandRecordColumn(#\"Expanded f.t\", \"f.hp\", {\"fed-transition\", \"vet\", \"fed-competitive\", \"mspouse\", \"fed-internal-search\", \"public\", \"land\", \"disability\", \"special-authorities\", \"fed-excepted\", \"peace\", \"overseas\", \"nguard\", \"graduates\", \"student\", \"native\"}, {\"f.hp.fed-transition\", \"f.hp.vet\", \"f.hp.fed-competitive\", \"f.hp.mspouse\", \"f.hp.fed-internal-search\", \"f.hp.public\", \"f.hp.land\", \"f.hp.disability\", \"f.hp.special-authorities\", \"f.hp.fed-excepted\", \"f.hp.peace\", \"f.hp.overseas\", \"f.hp.nguard\", \"f.hp.graduates\", \"f.hp.student\", \"f.hp.native\"}),",
+                "    #\"Expanded f.mco\" = Table.ExpandRecordColumn(#\"Expanded f.hp\", \"f.mco\", {\"IC Intel\", \"NatSec\", \"10\", \"Joint Duty Program\", \"07\", \"08\", \"01\", \"TechToGov\", \"Inflation Act\", \"0685\", \"CHIPS Act\", \"03\", \"ARPA-H\", \"0343\", \"0560\", \"06\", \"COVID-19\", \"Clearinghouse – CP Cleared\", \"OPM-HRS\", \"Special Priority Program Cert Issued\"}, {\"f.mco.IC Intel\", \"f.mco.NatSec\", \"f.mco.10\", \"f.mco.Joint Duty Program\", \"f.mco.07\", \"f.mco.08\", \"f.mco.01\", \"f.mco.TechToGov\", \"f.mco.Inflation Act\", \"f.mco.0685\", \"f.mco.CHIPS Act\", \"f.mco.03\", \"f.mco.ARPA-H\", \"f.mco.0343\", \"f.mco.0560\", \"f.mco.06\", \"f.mco.COVID-19\", \"f.mco.Clearinghouse – CP Cleared\", \"f.mco.OPM-HRS\", \"f.mco.Special Priority Program Cert Issued\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded f.mco\",{{\"TeaserName\", type text}, {\"Total\", Int64.Type}, {\"Pager.IsPaged\", type logical}, {\"Pager.NumberOfPages\", Int64.Type}, {\"Pager.NumberOfItems\", Int64.Type}, {\"Pager.ItemsPerPage\", Int64.Type}, {\"Pager.IsUnpaged\", type logical}, {\"Pager.CurrentPageIndex\", Int64.Type}, {\"Pager.NextPageIndex\", Int64.Type}, {\"Pager.LastPageIndex\", Int64.Type}, {\"Pager.FirstPageIndex\", Int64.Type}, {\"Pager.UseCurrentRequestPath\", type logical}, {\"Pager.HasNextPage\", type logical}, {\"Pager.HasPreviousPage\", type logical}, {\"Pager.PreviousPageIndex\", Int64.Type}, {\"Pager.IsSegmented\", type logical}, {\"Pager.IsEmpty\", type logical}, {\"Pager.IsFirstSegment\", type logical}, {\"Pager.IsLastSegment\", type logical}, {\"Pager.FirstPageItem\", Int64.Type}, {\"Pager.LastPageItem\", Int64.Type}, {\"Pager.TotalItems\", Int64.Type}, {\"Jobs\", type any}, {\"Suggestion\", type any}, {\"IsRadialSearch\", type logical}, {\"UniqueSearchID\", type text}, {\"IsValid\", type logical}, {\"f.ri.relocation\", Int64.Type}, {\"f.ti.telework\", Int64.Type}, {\"f.rmi.0\", Int64.Type}, {\"f.rmi.1\", Int64.Type}, {\"f.j.0343\", Int64.Type}, {\"f.j.0560\", Int64.Type}, {\"f.j.2210\", Int64.Type}, {\"f.j.0301\", Int64.Type}, {\"f.j.0501\", Int64.Type}, {\"f.j.1515\", Int64.Type}, {\"f.j.1102\", Int64.Type}, {\"f.j.0132\", Int64.Type}, {\"f.j.0801\", Int64.Type}, {\"f.j.0101\", Int64.Type}, {\"f.j.1101\", Int64.Type}, {\"f.j.1160\", Int64.Type}, {\"f.j.0830\", Int64.Type}, {\"f.j.0110\", Int64.Type}, {\"f.j.0896\", Int64.Type}, {\"f.j.1301\", Int64.Type}, {\"f.j.0344\", Int64.Type}, {\"f.j.0850\", Int64.Type}, {\"f.j.0401\", Int64.Type}, {\"f.j.0810\", Int64.Type}, {\"f.j.0819\", Int64.Type}, {\"f.j.1320\", Int64.Type}, {\"f.j.0020\", Int64.Type}, {\"f.j.0671\", Int64.Type}, {\"f.j.0808\", Int64.Type}, {\"f.j.0193\", Int64.Type}, {\"f.j.0685\", Int64.Type}, {\"f.j.0828\", Int64.Type}, {\"f.j.0854\", Int64.Type}, {\"f.j.0855\", Int64.Type}, {\"f.j.1350\", Int64.Type}, {\"f.j.1550\", Int64.Type}, {\"f.j.0512\", Int64.Type}, {\"f.j.2003\", Int64.Type}, {\"f.j.0669\", Int64.Type}, {\"f.j.1520\", Int64.Type}, {\"f.j.0861\", Int64.Type}, {\"f.j.0303\", Int64.Type}, {\"f.j.0340\", Int64.Type}, {\"f.j.1805\", Int64.Type}, {\"f.j.0610\", Int64.Type}, {\"f.j.1530\", Int64.Type}, {\"f.j.5201\", Int64.Type}, {\"f.j.1801\", Int64.Type}, {\"f.j.0201\", Int64.Type}, {\"f.j.0306\", Int64.Type}, {\"f.j.0399\", Int64.Type}, {\"f.j.0028\", Int64.Type}, {\"f.j.0802\", Int64.Type}, {\"f.j.0930\", Int64.Type}, {\"f.j.1310\", Int64.Type}, {\"f.j.0160\", Int64.Type}, {\"f.j.0341\", Int64.Type}, {\"f.j.0602\", Int64.Type}, {\"f.j.0803\", Int64.Type}, {\"f.j.0804\", Int64.Type}, {\"f.j.0893\", Int64.Type}, {\"f.j.1529\", Int64.Type}, {\"f.j.1730\", Int64.Type}, {\"f.j.2005\", Int64.Type}, {\"f.j.2110\", Int64.Type}, {\"f.j.0080\", Int64.Type}, {\"f.j.0089\", Int64.Type}, {\"f.j.0503\", Int64.Type}, {\"f.j.0511\", Int64.Type}, {\"f.j.0806\", Int64.Type}, {\"f.j.0840\", Int64.Type}, {\"f.j.0901\", Int64.Type}, {\"f.j.0967\", Int64.Type}, {\"f.j.1109\", Int64.Type}, {\"f.j.1152\", Int64.Type}, {\"f.j.1169\", Int64.Type}, {\"f.j.1306\", Int64.Type}, {\"f.j.1560\", Int64.Type}, {\"f.j.1825\", Int64.Type}, {\"f.j.2101\", Int64.Type}, {\"f.j.2181\", Int64.Type}, {\"f.j.0006\", Int64.Type}, {\"f.j.0099\", Int64.Type}, {\"f.j.0130\", Int64.Type}, {\"f.j.0150\", Int64.Type}, {\"f.j.0203\", Int64.Type}, {\"f.j.0342\", Int64.Type}, {\"f.j.0570\", Int64.Type}, {\"f.j.0599\", Int64.Type}, {\"f.j.0620\", Int64.Type}, {\"f.j.0807\", Int64.Type}, {\"f.j.0809\", Int64.Type}, {\"f.j.0856\", Int64.Type}, {\"f.j.0858\", Int64.Type}, {\"f.j.0881\", Int64.Type}, {\"f.j.0890\", Int64.Type}, {\"f.j.1165\", Int64.Type}, {\"f.j.1210\", Int64.Type}, {\"f.j.1371\", Int64.Type}, {\"f.j.1410\", Int64.Type}, {\"f.j.1501\", Int64.Type}, {\"f.j.1601\", Int64.Type}, {\"f.j.1810\", Int64.Type}, {\"f.j.1910\", Int64.Type}, {\"f.d.DD\", Int64.Type}, {\"f.d.TR\", Int64.Type}, {\"f.d.AR\", Int64.Type}, {\"f.d.AF\", Int64.Type}, {\"f.d.VA\", Int64.Type}, {\"f.d.NV\", Int64.Type}, {\"f.d.AF00\", Int64.Type}, {\"f.d.HS\", Int64.Type}, {\"f.d.OT\", Int64.Type}, {\"f.d.AR00\", Int64.Type}, {\"f.d.DD00\", Int64.Type}, {\"f.d.HE\", Int64.Type}, {\"f.d.TD\", Int64.Type}, {\"f.d.AG\", Int64.Type}, {\"f.d.IN\", Int64.Type}, {\"f.d.DJ\", Int64.Type}, {\"f.d.DN\", Int64.Type}, {\"f.d.HU\", Int64.Type}, {\"f.d.CM\", Int64.Type}, {\"f.d.HS00\", Int64.Type}, {\"f.d.HU00\", Int64.Type}, {\"f.d.IN00\", Int64.Type}, {\"f.d.NV00\", Int64.Type}, {\"f.d.GS\", Int64.Type}, {\"f.d.HE00\", Int64.Type}, {\"f.d.JL\", Int64.Type}, {\"f.d.LL\", Int64.Type}, {\"f.d.ST\", Int64.Type}, {\"f.d.TR00\", Int64.Type}, {\"f.d.AG00\", Int64.Type}, {\"f.d.JL00\", Int64.Type}, {\"f.d.LL00\", Int64.Type}, {\"f.d.DL\", Int64.Type}, {\"f.d.FQ\", Int64.Type}, {\"f.d.CM00\", Int64.Type}, {\"f.d.DN00\", Int64.Type}, {\"f.d.GS00\", Int64.Type}, {\"f.d.ED\", Int64.Type}, {\"f.d.NN\", Int64.Type}, {\"f.d.NN00\", Int64.Type}, {\"f.d.DJ00\", Int64.Type}, {\"f.d.EOP\", Int64.Type}, {\"f.d.ZZ\", Int64.Type}, {\"f.a.TR93\", Int64.Type}, {\"f.a.VATA\", Int64.Type}, {\"f.a.AFNG\", Int64.Type}, {\"f.a.ARNG\", Int64.Type}, {\"f.a.ARCE\", Int64.Type}, {\"f.a.HSCB\", Int64.Type}, {\"f.a.AF00\", Int64.Type}, {\"f.a.HS00\", Int64.Type}, {\"f.a.ARBA\", Int64.Type}, {\"f.a.NV24\", Int64.Type}, {\"f.a.AF1M\", Int64.Type}, {\"f.a.DD07\", Int64.Type}, {\"f.a.TD03\", Int64.Type}, {\"f.a.HE36\", Int64.Type}, {\"f.a.VALA\", Int64.Type}, {\"f.a.DN00\", Int64.Type}, {\"f.a.NV27\", Int64.Type}, {\"f.a.OI00\", Int64.Type}, {\"f.a.AF1C\", Int64.Type}, {\"f.a.NV12\", Int64.Type}, {\"f.a.NV19\", Int64.Type}, {\"f.a.TR91\", Int64.Type}, {\"f.a.DD63\", Int64.Type}, {\"f.a.HSAC\", Int64.Type}, {\"f.a.NV70\", Int64.Type}, {\"f.a.AR2A\", Int64.Type}, {\"f.a.ARAS\", Int64.Type}, {\"f.a.ARHR\", Int64.Type}, {\"f.a.DD01\", Int64.Type}, {\"f.a.DD02\", Int64.Type}, {\"f.a.FD00\", Int64.Type}, {\"f.a.NV11\", Int64.Type}, {\"f.a.ST00\", Int64.Type}, {\"f.a.ARAT\", Int64.Type}, {\"f.a.ARJA\", Int64.Type}, {\"f.a.ARXD\", Int64.Type}, {\"f.a.CI00\", Int64.Type}, {\"f.a.CM54\", Int64.Type}, {\"f.a.HSAB\", Int64.Type}, {\"f.a.NV60\", Int64.Type}, {\"f.a.SB00\", Int64.Type}, {\"f.a.ARTC\", Int64.Type}, {\"f.a.DD83\", Int64.Type}, {\"f.a.DJ01\", Int64.Type}, {\"f.a.HE39\", Int64.Type}, {\"f.a.HSCA\", Int64.Type}, {\"f.a.HUMM\", Int64.Type}, {\"f.a.IN08\", Int64.Type}, {\"f.a.JL04\", Int64.Type}, {\"f.a.NV23\", Int64.Type}, {\"f.a.TD00\", Int64.Type}, {\"f.a.AF13\", Int64.Type}, {\"f.a.AF1L\", Int64.Type}, {\"f.a.AF1Y\", Int64.Type}, {\"f.a.AGFA\", Int64.Type}, {\"f.a.CM63\", Int64.Type}, {\"f.a.DD04\", Int64.Type}, {\"f.a.HE10\", Int64.Type}, {\"f.a.HE34\", Int64.Type}, {\"f.a.HSAA\", Int64.Type}, {\"f.a.HUDD\", Int64.Type}, {\"f.a.NU00\", Int64.Type}, {\"f.a.NV22\", Int64.Type}, {\"f.a.NV52\", Int64.Type}, {\"f.a.NV76\", Int64.Type}, {\"f.a.TRFD\", Int64.Type}, {\"f.a.AF3D\", Int64.Type}, {\"f.a.ARAF\", Int64.Type}, {\"f.a.DJ09\", Int64.Type}, {\"f.a.HSBE\", Int64.Type}, {\"f.a.AF0M\", Int64.Type}, {\"f.a.AG16\", Int64.Type}, {\"f.a.AG99\", Int64.Type}, {\"f.a.ARFC\", Int64.Type}, {\"f.a.ARX6\", Int64.Type}, {\"f.a.DD35\", Int64.Type}, {\"f.a.DLPE\", Int64.Type}, {\"f.a.DN03\", Int64.Type}, {\"f.a.FQ00\", Int64.Type}, {\"f.a.GS03\", Int64.Type}, {\"f.a.GS30\", Int64.Type}, {\"f.a.HE32\", Int64.Type}, {\"f.a.HSBD\", Int64.Type}, {\"f.a.IN05\", Int64.Type}, {\"f.a.IN07\", Int64.Type}, {\"f.a.NF00\", Int64.Type}, {\"f.a.NV25\", Int64.Type}, {\"f.a.TD01\", Int64.Type}, {\"f.a.AF0R\", Int64.Type}, {\"f.a.AF4S\", Int64.Type}, {\"f.a.AF4W\", Int64.Type}, {\"f.a.AG11\", Int64.Type}, {\"f.a.AG34\", Int64.Type}, {\"f.a.AM00\", Int64.Type}, {\"f.a.ARE1\", Int64.Type}, {\"f.a.ARHC\", Int64.Type}, {\"f.a.ARSA\", Int64.Type}, {\"f.a.ARSP\", Int64.Type}, {\"f.a.ARX2\", Int64.Type}, {\"f.a.ARX8\", Int64.Type}, {\"f.a.ARXC\", Int64.Type}, {\"f.a.BG00\", Int64.Type}, {\"f.a.CM55\", Int64.Type}, {\"f.a.DD11\", Int64.Type}, {\"f.a.DD12\", Int64.Type}, {\"f.a.DD16\", Int64.Type}, {\"f.a.DD26\", Int64.Type}, {\"f.a.DD60\", Int64.Type}, {\"f.a.DD61\", Int64.Type}, {\"f.a.DJ08\", Int64.Type}, {\"f.a.DNNN\", Int64.Type}, {\"f.a.FRFT\", Int64.Type}, {\"f.a.HE31\", Int64.Type}, {\"f.a.HE37\", Int64.Type}, {\"f.a.HE38\", Int64.Type}, {\"f.a.HUKK\", Int64.Type}, {\"f.a.HUPP\", Int64.Type}, {\"f.a.HUQQ\", Int64.Type}, {\"f.a.LC00\", Int64.Type}, {\"f.a.LG00\", Int64.Type}, {\"f.a.NV33\", Int64.Type}, {\"f.a.OM00\", Int64.Type}, {\"f.a.RO00\", Int64.Type}, {\"f.a.SE00\", Int64.Type}, {\"f.a.SM01\", Int64.Type}, {\"f.a.VAPA\", Int64.Type}, {\"f.a.AF0D\", Int64.Type}, {\"f.a.AF0J\", Int64.Type}, {\"f.a.AF34\", Int64.Type}, {\"f.a.AF3T\", Int64.Type}, {\"f.a.AF5D\", Int64.Type}, {\"f.a.AF6F\", Int64.Type}, {\"f.a.AG07\", Int64.Type}, {\"f.a.AG30\", Int64.Type}, {\"f.a.AP00\", Int64.Type}, {\"f.a.AR3A\", Int64.Type}, {\"f.a.ARAE\", Int64.Type}, {\"f.a.ARGB\", Int64.Type}, {\"f.a.ARJ1\", Int64.Type}, {\"f.a.ARMC\", Int64.Type}, {\"f.a.ARP1\", Int64.Type}, {\"f.a.ARSB\", Int64.Type}, {\"f.a.ARX7\", Int64.Type}, {\"f.a.ARXT\", Int64.Type}, {\"f.a.CU00\", Int64.Type}, {\"f.a.DD27\", Int64.Type}, {\"f.a.DD48\", Int64.Type}, {\"f.a.DD53\", Int64.Type}, {\"f.a.DJ06\", Int64.Type}, {\"f.a.DJ07\", Int64.Type}, {\"f.a.DJ15\", Int64.Type}, {\"f.a.EE00\", Int64.Type}, {\"f.a.GB00\", Int64.Type}, {\"f.a.GS00\", Int64.Type}, {\"f.a.HE70\", Int64.Type}, {\"f.a.IN10\", Int64.Type}, {\"f.a.IN15\", Int64.Type}, {\"f.a.IN26\", Int64.Type}, {\"f.a.IN27\", Int64.Type}, {\"f.a.JL02\", Int64.Type}, {\"f.a.LD00\", Int64.Type}, {\"f.a.NN10\", Int64.Type}, {\"f.a.NV30\", Int64.Type}, {\"f.a.NV74\", Int64.Type}, {\"f.a.RF00\", Int64.Type}, {\"f.a.SM03\", Int64.Type}, {\"f.a.TD04\", Int64.Type}, {\"f.a.TD09\", Int64.Type}, {\"f.a.TRAI\", Int64.Type}, {\"f.a.AF0B\", Int64.Type}, {\"f.a.AF1B\", Int64.Type}, {\"f.a.AF3Q\", Int64.Type}, {\"f.a.AF4C\", Int64.Type}, {\"f.a.AF4D\", Int64.Type}, {\"f.a.AF4G\", Int64.Type}, {\"f.a.AF4V\", Int64.Type}, {\"f.a.AG10\", Int64.Type}, {\"f.a.AG18\", Int64.Type}, {\"f.a.AG90\", Int64.Type}, {\"f.a.AGCR\", Int64.Type}, {\"f.a.AN00\", Int64.Type}, {\"f.a.ARCS\", Int64.Type}, {\"f.a.ARE3\", Int64.Type}, {\"f.a.ARFB\", Int64.Type}, {\"f.a.ARSE\", Int64.Type}, {\"f.a.ARSJ\", Int64.Type}, {\"f.a.ARXA\", Int64.Type}, {\"f.a.ARXB\", Int64.Type}, {\"f.a.CM53\", Int64.Type}, {\"f.a.CM56\", Int64.Type}, {\"f.a.CM57\", Int64.Type}, {\"f.a.DD05\", Int64.Type}, {\"f.a.DD21\", Int64.Type}, {\"f.a.DD80\", Int64.Type}, {\"f.a.DJ02\", Int64.Type}, {\"f.a.DJ03\", Int64.Type}, {\"f.a.DJ12\", Int64.Type}, {\"f.a.DLSL\", Int64.Type}, {\"f.a.DNFE\", Int64.Type}, {\"f.a.DNWP\", Int64.Type}, {\"f.a.EDED\", Int64.Type}, {\"f.a.EDEN\", Int64.Type}, {\"f.a.EDER\", Int64.Type}, {\"f.a.FC00\", Int64.Type}, {\"f.a.FQ02\", Int64.Type}, {\"f.a.FT00\", Int64.Type}, {\"f.a.GS26\", Int64.Type}, {\"f.a.HE11\", Int64.Type}, {\"f.a.HFHA\", Int64.Type}, {\"f.a.HFHI\", Int64.Type}, {\"f.a.HSAE\", Int64.Type}, {\"f.a.HSBB\", Int64.Type}, {\"f.a.HSBC\", Int64.Type}, {\"f.a.HUEE\", Int64.Type}, {\"f.a.IN06\", Int64.Type}, {\"f.a.IN29\", Int64.Type}, {\"f.a.LA00\", Int64.Type}, {\"f.a.NN72\", Int64.Type}, {\"f.a.NV00\", Int64.Type}, {\"f.a.NV18\", Int64.Type}, {\"f.a.PO01\", Int64.Type}, {\"f.a.RH00\", Int64.Type}, {\"f.a.TB00\", Int64.Type}, {\"f.a.TC00\", Int64.Type}, {\"f.a.TD05\", Int64.Type}, {\"f.a.TD10\", Int64.Type}, {\"f.a.TD17\", Int64.Type}, {\"f.a.TN00\", Int64.Type}, {\"f.a.TRAJ\", Int64.Type}, {\"f.a.TW00\", Int64.Type}, {\"f.a.VAAJ\", Int64.Type}, {\"f.a.VABF\", Int64.Type}, {\"f.a.VADD\", Int64.Type}, {\"f.a.VADG\", Int64.Type}, {\"f.a.VAEB\", Int64.Type}, {\"f.a.VAHA\", Int64.Type}, {\"f.a.VAKB\", Int64.Type}, {\"f.a.XPDS\", Int64.Type}, {\"f.ws.1\", Int64.Type}, {\"f.ws.6\", Int64.Type}, {\"f.ws.4\", Int64.Type}, {\"f.wt.15317\", Int64.Type}, {\"f.wt.15319\", Int64.Type}, {\"f.wt.15318\", Int64.Type}, {\"f.wt.15327\", Int64.Type}, {\"f.wt.15320\", Int64.Type}, {\"f.wt.15321\", Int64.Type}, {\"f.wt.15668\", Int64.Type}, {\"f.wt.15326\", Int64.Type}, {\"f.wt.15328\", Int64.Type}, {\"f.wt.15667\", Int64.Type}, {\"f.sc.0\", Int64.Type}, {\"f.sc.2\", Int64.Type}, {\"f.sc.8\", Int64.Type}, {\"f.sc.4\", Int64.Type}, {\"f.sc.3\", Int64.Type}, {\"f.sc.1\", Int64.Type}, {\"f.sc.7\", Int64.Type}, {\"f.sc.5\", Int64.Type}, {\"f.ps.1\", Int64.Type}, {\"f.ps.5\", Int64.Type}, {\"f.ps.2\", Int64.Type}, {\"f.ps.4\", Int64.Type}, {\"f.ps.6\", Int64.Type}, {\"f.ps.3\", Int64.Type}, {\"f.ps.7\", Int64.Type}, {\"f.t.1\", Int64.Type}, {\"f.t.2\", Int64.Type}, {\"f.t.0\", Int64.Type}, {\"f.t.5\", Int64.Type}, {\"f.t.-1\", Int64.Type}, {\"f.t.7\", Int64.Type}, {\"f.t.8\", Int64.Type}, {\"f.hp.fed-transition\", Int64.Type}, {\"f.hp.vet\", Int64.Type}, {\"f.hp.fed-competitive\", Int64.Type}, {\"f.hp.mspouse\", Int64.Type}, {\"f.hp.fed-internal-search\", Int64.Type}, {\"f.hp.public\", Int64.Type}, {\"f.hp.land\", Int64.Type}, {\"f.hp.disability\", Int64.Type}, {\"f.hp.special-authorities\", Int64.Type}, {\"f.hp.fed-excepted\", Int64.Type}, {\"f.hp.peace\", Int64.Type}, {\"f.hp.overseas\", Int64.Type}, {\"f.hp.nguard\", Int64.Type}, {\"f.hp.graduates\", Int64.Type}, {\"f.hp.student\", Int64.Type}, {\"f.hp.native\", Int64.Type}, {\"f.mco.IC Intel\", Int64.Type}, {\"f.mco.NatSec\", Int64.Type}, {\"f.mco.10\", Int64.Type}, {\"f.mco.Joint Duty Program\", Int64.Type}, {\"f.mco.07\", Int64.Type}, {\"f.mco.08\", Int64.Type}, {\"f.mco.01\", Int64.Type}, {\"f.mco.TechToGov\", Int64.Type}, {\"f.mco.Inflation Act\", Int64.Type}, {\"f.mco.0685\", Int64.Type}, {\"f.mco.CHIPS Act\", Int64.Type}, {\"f.mco.03\", Int64.Type}, {\"f.mco.ARPA-H\", Int64.Type}, {\"f.mco.0343\", Int64.Type}, {\"f.mco.0560\", Int64.Type}, {\"f.mco.06\", Int64.Type}, {\"f.mco.COVID-19\", Int64.Type}, {\"f.mco.Clearinghouse – CP Cleared\", Int64.Type}, {\"f.mco.OPM-HRS\", Int64.Type}, {\"f.mco.Special Priority Program Cert Issued\", Int64.Type}}),",
+                "    #\"Expanded Jobs\" = Table.ExpandListColumn(#\"Changed Type\", \"Jobs\"),",
+                "    #\"Expanded Jobs1\" = Table.ExpandRecordColumn(#\"Expanded Jobs\", \"Jobs\", {\"Title\", \"Agency\", \"Department\", \"SalaryDisplay\", \"DocumentID\", \"PositionID\", \"Location\", \"DateDisplay\", \"WorkSchedule\", \"WorkType\", \"ClockDisplay\", \"ShowMapIcon\", \"LocationLatitude\", \"LocationLongitude\", \"HiringPath\", \"LowGrade\", \"HighGrade\", \"JobGrade\", \"LocationName\", \"PositionLocationCount\", \"PositionURI\", \"Relocation\", \"MinimumRange\", \"PositionEndDate\", \"SubAgency\"}, {\"Jobs.Title\", \"Jobs.Agency\", \"Jobs.Department\", \"Jobs.SalaryDisplay\", \"Jobs.DocumentID\", \"Jobs.PositionID\", \"Jobs.Location\", \"Jobs.DateDisplay\", \"Jobs.WorkSchedule\", \"Jobs.WorkType\", \"Jobs.ClockDisplay\", \"Jobs.ShowMapIcon\", \"Jobs.LocationLatitude\", \"Jobs.LocationLongitude\", \"Jobs.HiringPath\", \"Jobs.LowGrade\", \"Jobs.HighGrade\", \"Jobs.JobGrade\", \"Jobs.LocationName\", \"Jobs.PositionLocationCount\", \"Jobs.PositionURI\", \"Jobs.Relocation\", \"Jobs.MinimumRange\", \"Jobs.PositionEndDate\", \"Jobs.SubAgency\"}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded Jobs1\",{\"Jobs.DocumentID\", \"Jobs.PositionID\", \"Jobs.PositionURI\", \"Jobs.Relocation\", \"Jobs.MinimumRange\", \"Jobs.PositionEndDate\", \"Jobs.SubAgency\"}),",
+                "    #\"Expanded Jobs.HiringPath\" = Table.ExpandListColumn(#\"Removed Columns\", \"Jobs.HiringPath\"),",
+                "    #\"Expanded Jobs.HiringPath1\" = Table.ExpandRecordColumn(#\"Expanded Jobs.HiringPath\", \"Jobs.HiringPath\", {\"Code\", \"Tooltip\", \"IsSearchFilter\"}, {\"Jobs.HiringPath.Code\", \"Jobs.HiringPath.Tooltip\", \"Jobs.HiringPath.IsSearchFilter\"}),",
+                "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Expanded Jobs.HiringPath1\",{\"TeaserName\", \"Total\", \"Pager.IsPaged\", \"Pager.NumberOfPages\", \"Pager.NumberOfItems\", \"Pager.ItemsPerPage\", \"Pager.IsUnpaged\", \"Pager.CurrentPageIndex\", \"Pager.NextPageIndex\", \"Pager.LastPageIndex\", \"Pager.FirstPageIndex\", \"Pager.UseCurrentRequestPath\", \"Pager.HasNextPage\", \"Pager.HasPreviousPage\", \"Pager.PreviousPageIndex\", \"Pager.IsSegmented\", \"Pager.IsEmpty\", \"Pager.IsFirstSegment\", \"Pager.IsLastSegment\", \"Pager.FirstPageItem\", \"Pager.LastPageItem\", \"Pager.TotalItems\", \"Jobs.DateDisplay\", \"Jobs.SalaryDisplay\", \"Jobs.WorkSchedule\", \"Jobs.WorkType\", \"Jobs.ClockDisplay\", \"Jobs.ShowMapIcon\", \"Jobs.LocationLatitude\", \"Jobs.LocationLongitude\", \"Jobs.HiringPath.Code\", \"Jobs.HiringPath.Tooltip\", \"Jobs.HiringPath.IsSearchFilter\", \"Jobs.LowGrade\", \"Jobs.HighGrade\", \"Jobs.JobGrade\"}),",
+                "    #\"Expanded Suggestion\" = Table.ExpandListColumn(#\"Removed Columns1\", \"Suggestion\"),",
+                "    #\"Removed Columns3\" = Table.RemoveColumns(#\"Expanded Suggestion\",{\"IsValid\", \"f.ri.relocation\", \"f.ti.telework\", \"f.rmi.0\", \"f.rmi.1\", \"f.j.0343\", \"f.j.0560\", \"f.j.2210\", \"f.j.0301\", \"f.j.0501\", \"f.j.1515\", \"f.j.1102\", \"f.j.0132\", \"f.j.0801\", \"f.j.0101\", \"f.j.1101\", \"f.j.1160\", \"f.j.0830\", \"f.j.0110\", \"f.j.0896\", \"f.j.1301\", \"f.j.0344\", \"f.j.0850\", \"f.j.0401\", \"f.j.0810\", \"f.j.0819\", \"f.j.1320\", \"f.j.0020\", \"f.j.0671\", \"f.j.0808\", \"f.j.0193\", \"f.j.0685\", \"f.j.0828\", \"f.j.0854\", \"f.j.0855\", \"f.j.1350\", \"f.j.1550\", \"f.j.0512\", \"f.j.2003\", \"f.j.0669\", \"f.j.1520\", \"f.j.0861\", \"f.j.0303\", \"f.j.0340\", \"f.j.1805\", \"f.j.0610\", \"f.j.1530\", \"f.j.5201\", \"f.j.1801\", \"f.j.0201\", \"f.j.0306\", \"f.j.0399\", \"f.j.0028\", \"f.j.0802\", \"f.j.0930\", \"f.j.1310\", \"f.j.0160\", \"f.j.0341\", \"f.j.0602\", \"f.j.0803\", \"f.j.0804\", \"f.j.0893\", \"f.j.1529\", \"f.j.1730\", \"f.j.2005\", \"f.j.2110\", \"f.j.0080\", \"f.j.0089\", \"f.j.0503\", \"f.j.0511\", \"f.j.0806\", \"f.j.0840\", \"f.j.0901\", \"f.j.0967\", \"f.j.1109\", \"f.j.1152\", \"f.j.1169\", \"f.j.1306\", \"f.j.1560\", \"f.j.1825\", \"f.j.2101\", \"f.j.2181\", \"f.j.0006\", \"f.j.0099\", \"f.j.0130\", \"f.j.0150\", \"f.j.0203\", \"f.j.0342\", \"f.j.0570\", \"f.j.0599\", \"f.j.0620\", \"f.j.0807\", \"f.j.0809\", \"f.j.0856\", \"f.j.0858\", \"f.j.0881\", \"f.j.0890\", \"f.j.1165\", \"f.j.1210\", \"f.j.1371\", \"f.j.1410\", \"f.j.1501\", \"f.j.1601\", \"f.j.1810\", \"f.j.1910\", \"f.d.DD\", \"f.d.TR\", \"f.d.AR\", \"f.d.AF\", \"f.d.VA\", \"f.d.NV\", \"f.d.AF00\", \"f.d.HS\", \"f.d.OT\", \"f.d.AR00\", \"f.d.DD00\", \"f.d.HE\", \"f.d.TD\", \"f.d.AG\", \"f.d.IN\", \"f.d.DJ\", \"f.d.DN\", \"f.d.HU\", \"f.d.CM\", \"f.d.HS00\", \"f.d.HU00\", \"f.d.IN00\", \"f.d.NV00\", \"f.d.GS\", \"f.d.HE00\", \"f.d.JL\", \"f.d.LL\", \"f.d.ST\", \"f.d.TR00\", \"f.d.AG00\", \"f.d.JL00\", \"f.d.LL00\", \"f.d.DL\", \"f.d.FQ\", \"f.d.CM00\", \"f.d.DN00\", \"f.d.GS00\", \"f.d.ED\", \"f.d.NN\", \"f.d.NN00\", \"f.d.DJ00\", \"f.d.EOP\", \"f.d.ZZ\", \"f.a.TR93\", \"f.a.VATA\", \"f.a.AFNG\", \"f.a.ARNG\", \"f.a.ARCE\", \"f.a.HSCB\", \"f.a.AF00\", \"f.a.HS00\", \"f.a.ARBA\", \"f.a.NV24\", \"f.a.AF1M\", \"f.a.DD07\", \"f.a.TD03\", \"f.a.HE36\", \"f.a.VALA\", \"f.a.DN00\", \"f.a.NV27\", \"f.a.OI00\", \"f.a.AF1C\", \"f.a.NV12\", \"f.a.NV19\", \"f.a.TR91\", \"f.a.DD63\", \"f.a.HSAC\", \"f.a.NV70\", \"f.a.AR2A\", \"f.a.ARAS\", \"f.a.ARHR\", \"f.a.DD01\", \"f.a.DD02\", \"f.a.FD00\", \"f.a.NV11\", \"f.a.ST00\", \"f.a.ARAT\", \"f.a.ARJA\", \"f.a.ARXD\", \"f.a.CI00\", \"f.a.CM54\", \"f.a.HSAB\", \"f.a.NV60\", \"f.a.SB00\", \"f.a.ARTC\", \"f.a.DD83\", \"f.a.DJ01\", \"f.a.HE39\", \"f.a.HSCA\", \"f.a.HUMM\", \"f.a.IN08\", \"f.a.JL04\", \"f.a.NV23\", \"f.a.TD00\", \"f.a.AF13\", \"f.a.AF1L\", \"f.a.AF1Y\", \"f.a.AGFA\", \"f.a.CM63\", \"f.a.DD04\", \"f.a.HE10\", \"f.a.HE34\", \"f.a.HSAA\", \"f.a.HUDD\", \"f.a.NU00\", \"f.a.NV22\", \"f.a.NV52\", \"f.a.NV76\", \"f.a.TRFD\", \"f.a.AF3D\", \"f.a.ARAF\", \"f.a.DJ09\", \"f.a.HSBE\", \"f.a.AF0M\", \"f.a.AG16\", \"f.a.AG99\", \"f.a.ARFC\", \"f.a.ARX6\", \"f.a.DD35\", \"f.a.DLPE\", \"f.a.DN03\", \"f.a.FQ00\", \"f.a.GS03\", \"f.a.GS30\", \"f.a.HE32\", \"f.a.HSBD\", \"f.a.IN05\", \"f.a.IN07\", \"f.a.NF00\", \"f.a.NV25\", \"f.a.TD01\", \"f.a.AF0R\", \"f.a.AF4S\", \"f.a.AF4W\", \"f.a.AG11\", \"f.a.AG34\", \"f.a.AM00\", \"f.a.ARE1\", \"f.a.ARHC\", \"f.a.ARSA\", \"f.a.ARSP\", \"f.a.ARX2\", \"f.a.ARX8\", \"f.a.ARXC\", \"f.a.BG00\", \"f.a.CM55\", \"f.a.DD11\", \"f.a.DD12\", \"f.a.DD16\", \"f.a.DD26\", \"f.a.DD60\", \"f.a.DD61\", \"f.a.DJ08\", \"f.a.DNNN\", \"f.a.FRFT\", \"f.a.HE31\", \"f.a.HE37\", \"f.a.HE38\", \"f.a.HUKK\", \"f.a.HUPP\", \"f.a.HUQQ\", \"f.a.LC00\", \"f.a.LG00\", \"f.a.NV33\", \"f.a.OM00\", \"f.a.RO00\", \"f.a.SE00\", \"f.a.SM01\", \"f.a.VAPA\", \"f.a.AF0D\", \"f.a.AF0J\", \"f.a.AF34\", \"f.a.AF3T\", \"f.a.AF5D\", \"f.a.AF6F\", \"f.a.AG07\", \"f.a.AG30\", \"f.a.AP00\", \"f.a.AR3A\", \"f.a.ARAE\", \"f.a.ARGB\", \"f.a.ARJ1\", \"f.a.ARMC\", \"f.a.ARP1\", \"f.a.ARSB\", \"f.a.ARX7\", \"f.a.ARXT\", \"f.a.CU00\", \"f.a.DD27\", \"f.a.DD48\", \"f.a.DD53\", \"f.a.DJ06\", \"f.a.DJ07\", \"f.a.DJ15\", \"f.a.EE00\", \"f.a.GB00\", \"f.a.GS00\", \"f.a.HE70\", \"f.a.IN10\", \"f.a.IN15\", \"f.a.IN26\", \"f.a.IN27\", \"f.a.JL02\", \"f.a.LD00\", \"f.a.NN10\", \"f.a.NV30\", \"f.a.NV74\", \"f.a.RF00\", \"f.a.SM03\", \"f.a.TD04\", \"f.a.TD09\", \"f.a.TRAI\", \"f.a.AF0B\", \"f.a.AF1B\", \"f.a.AF3Q\", \"f.a.AF4C\", \"f.a.AF4D\", \"f.a.AF4G\", \"f.a.AF4V\", \"f.a.AG10\", \"f.a.AG18\", \"f.a.AG90\", \"f.a.AGCR\", \"f.a.AN00\", \"f.a.ARCS\", \"f.a.ARE3\", \"f.a.ARFB\", \"f.a.ARSE\", \"f.a.ARSJ\", \"f.a.ARXA\", \"f.a.ARXB\", \"f.a.CM53\", \"f.a.CM56\", \"f.a.CM57\", \"f.a.DD05\", \"f.a.DD21\", \"f.a.DD80\", \"f.a.DJ02\", \"f.a.DJ03\", \"f.a.DJ12\", \"f.a.DLSL\", \"f.a.DNFE\", \"f.a.DNWP\", \"f.a.EDED\", \"f.a.EDEN\", \"f.a.EDER\", \"f.a.FC00\", \"f.a.FQ02\", \"f.a.FT00\", \"f.a.GS26\", \"f.a.HE11\", \"f.a.HFHA\", \"f.a.HFHI\", \"f.a.HSAE\", \"f.a.HSBB\", \"f.a.HSBC\", \"f.a.HUEE\", \"f.a.IN06\", \"f.a.IN29\", \"f.a.LA00\", \"f.a.NN72\", \"f.a.NV00\", \"f.a.NV18\", \"f.a.PO01\", \"f.a.RH00\", \"f.a.TB00\", \"f.a.TC00\", \"f.a.TD05\", \"f.a.TD10\", \"f.a.TD17\", \"f.a.TN00\", \"f.a.TRAJ\", \"f.a.TW00\", \"f.a.VAAJ\", \"f.a.VABF\", \"f.a.VADD\", \"f.a.VADG\", \"f.a.VAEB\", \"f.a.VAHA\", \"f.a.VAKB\", \"f.a.XPDS\", \"f.ws.1\", \"f.ws.6\", \"f.ws.4\", \"f.wt.15317\", \"f.wt.15319\", \"f.wt.15318\", \"f.wt.15327\", \"f.wt.15320\", \"f.wt.15321\", \"f.wt.15668\", \"f.wt.15326\", \"f.wt.15328\", \"f.wt.15667\", \"f.sc.0\", \"f.sc.2\", \"f.sc.8\", \"f.sc.4\", \"f.sc.3\", \"f.sc.1\", \"f.sc.7\", \"f.sc.5\", \"f.ps.1\", \"f.ps.5\", \"f.ps.2\", \"f.ps.4\", \"f.ps.6\", \"f.ps.3\", \"f.ps.7\", \"f.t.1\", \"f.t.2\", \"f.t.0\", \"f.t.5\", \"f.t.-1\", \"f.t.7\", \"f.t.8\", \"f.hp.fed-transition\", \"f.hp.vet\", \"f.hp.fed-competitive\", \"f.hp.mspouse\", \"f.hp.fed-internal-search\", \"f.hp.public\", \"f.hp.land\", \"f.hp.disability\", \"f.hp.special-authorities\", \"f.hp.fed-excepted\", \"f.hp.peace\", \"f.hp.overseas\", \"f.hp.nguard\", \"f.hp.graduates\", \"f.hp.student\", \"f.hp.native\", \"f.mco.IC Intel\", \"f.mco.NatSec\", \"f.mco.10\", \"f.mco.Joint Duty Program\", \"f.mco.07\", \"f.mco.08\", \"f.mco.01\", \"f.mco.TechToGov\", \"f.mco.Inflation Act\", \"f.mco.0685\", \"f.mco.CHIPS Act\", \"f.mco.03\", \"f.mco.ARPA-H\", \"f.mco.0343\", \"f.mco.0560\", \"f.mco.06\", \"f.mco.COVID-19\", \"f.mco.Clearinghouse – CP Cleared\", \"f.mco.OPM-HRS\", \"f.mco.Special Priority Program Cert Issued\"}),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Columns3\", {\"Jobs.LocationName\"}),",
+                "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Removed Duplicates\",{\"Jobs.PositionLocationCount\", \"Suggestion\", \"IsRadialSearch\", \"Jobs.Agency\", \"Jobs.Department\", \"Jobs.Location\"}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Removed Columns2\",{\"UniqueSearchID\", \"Jobs.Title\", \"Jobs.LocationName\"}),",
+                "    #\"Added Index\" = Table.AddIndexColumn(#\"Reordered Columns\", \"Index\", 1, 1, Int64.Type),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Index\",{{\"Index\", \"Job Id\"}}),",
+                "    #\"Reordered Columns1\" = Table.ReorderColumns(#\"Renamed Columns\",{\"Job Id\", \"UniqueSearchID\", \"Jobs.Title\", \"Jobs.LocationName\"}),",
+                "    #\"Removed Columns4\" = Table.RemoveColumns(#\"Reordered Columns1\",{\"UniqueSearchID\"}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Removed Columns4\", \"Jobs.LocationName\", Splitter.SplitTextByDelimiter(\",\", QuoteStyle.Csv), {\"Jobs.LocationName.1\", \"Jobs.LocationName.2\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"Jobs.LocationName.1\", type text}, {\"Jobs.LocationName.2\", type text}}),",
+                "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type1\",{{\"Jobs.LocationName.1\", \"City\"}, {\"Jobs.LocationName.2\", \"State\"}}),",
+                "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Renamed Columns1\", \"State\", \"State - Copy\"),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Duplicated Column\",\" Texas\",\"United States\",Replacer.ReplaceText,{\"State - Copy\"}),",
+                "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Replaced Value\",{{\"State - Copy\", \"Country\"}}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Renamed Columns2\",\"\",\"United States\",Replacer.ReplaceValue,{\"Country\"}),",
+                "    #\"Filled Down\" = Table.FillDown(#\"Replaced Value1\",{\"Country\"}),",
+                "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Filled Down\",\" District of Columbia\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value3\" = Table.ReplaceValue(#\"Replaced Value2\",\" California\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value4\" = Table.ReplaceValue(#\"Replaced Value3\",\" Utah\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value5\" = Table.ReplaceValue(#\"Replaced Value4\",\" Missouri\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value6\" = Table.ReplaceValue(#\"Replaced Value5\",\" Alaska\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value7\" = Table.ReplaceValue(#\"Replaced Value6\",\" Florida\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value8\" = Table.ReplaceValue(#\"Replaced Value7\",\" New Mexico\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value9\" = Table.ReplaceValue(#\"Replaced Value8\",\" Georgia\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value10\" = Table.ReplaceValue(#\"Replaced Value9\",\" Virginia\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value11\" = Table.ReplaceValue(#\"Replaced Value10\",\" Arizona\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value12\" = Table.ReplaceValue(#\"Replaced Value11\",\" Colorado\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value13\" = Table.ReplaceValue(#\"Replaced Value12\",\" Alabama\",\"United States\",Replacer.ReplaceText,{\"Country\"}),",
+                "    #\"Replaced Value14\" = Table.ReplaceValue(#\"Replaced Value13\",\"Virginia\",\"VA\",Replacer.ReplaceText,{\"State\"}),",
+                "    #\"Duplicated Column1\" = Table.DuplicateColumn(#\"Replaced Value14\", \"Country\", \"Country - Copy\"),",
+                "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Duplicated Column1\",{{\"Country - Copy\", \"Job Description\"}}),",
+                "    #\"Replaced Value15\" = Table.ReplaceValue(#\"Renamed Columns3\",\"United States\",\"Not Given\",Replacer.ReplaceText,{\"Job Description\"}),",
+                "    #\"Duplicated Column2\" = Table.DuplicateColumn(#\"Replaced Value15\", \"Job Description\", \"Job Description - Copy\"),",
+                "    #\"Renamed Columns4\" = Table.RenameColumns(#\"Duplicated Column2\",{{\"Job Description - Copy\", \"Skills Requirement\"}}),",
+                "    #\"Inserted Merged Column\" = Table.AddColumn(#\"Renamed Columns4\", \"Date\", each Text.Combine({\"0\", Text.From([Job Id], \"en-KE\"), \"/08/2023\"}), type text),",
+                "    #\"Replaced Value16\" = Table.ReplaceValue(#\"Inserted Merged Column\",\"010/08/2023\",\"10/08/2023\",Replacer.ReplaceText,{\"Date\"}),",
+                "    #\"Split Column by Positions\" = Table.SplitColumn(#\"Replaced Value16\", \"Date\", Splitter.SplitTextByPositions({1}), {\"Date.1\"}),",
+                "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Split Column by Positions\",{{\"Date.1\", type text}}),",
+                "    #\"Renamed Columns5\" = Table.RenameColumns(#\"Changed Type2\",{{\"Date.1\", \"Date\"}}),",
+                "    #\"Changed Type3\" = Table.TransformColumnTypes(#\"Renamed Columns5\",{{\"Date\", type date}}),",
+                "    #\"Replaced Errors\" = Table.ReplaceErrorValues(#\"Changed Type3\", {{\"Date\", #date(2023, 8, 10)}}),",
+                "    #\"Renamed Columns6\" = Table.RenameColumns(#\"Replaced Errors\",{{\"Jobs.Title\", \"Job Title\"}, {\"Date\", \"Date Posted\"}, {\"Skills Requirement\", \"Skill Requirements\"}}),",
+                "    #\"Reordered Columns2\" = Table.ReorderColumns(#\"Renamed Columns6\",{\"Job Id\", \"Job Title\", \"City\", \"State\", \"Country\", \"Date Posted\", \"Job Description\", \"Skill Requirements\"}),",
+                "    #\"Renamed Columns7\" = Table.RenameColumns(#\"Reordered Columns2\",{{\"Job Id\", \"Job ID\"}}),",
+                "    #\"Duplicated Column3\" = Table.DuplicateColumn(#\"Renamed Columns7\", \"Job Title\", \"Job Title - Copy\"),",
+                "    #\"Renamed Columns8\" = Table.RenameColumns(#\"Duplicated Column3\",{{\"Job Title - Copy\", \"Industry\"}}),",
+                "    #\"Split Column by Delimiter1\" = Table.SplitColumn(#\"Renamed Columns8\", \"Industry\", Splitter.SplitTextByEachDelimiter({\" \"}, QuoteStyle.Csv, false), {\"Industry.1\", \"Industry.2\"}),",
+                "    #\"Changed Type4\" = Table.TransformColumnTypes(#\"Split Column by Delimiter1\",{{\"Industry.1\", type text}, {\"Industry.2\", type text}}),",
+                "    #\"Removed Columns5\" = Table.RemoveColumns(#\"Changed Type4\",{\"Industry.2\"}),",
+                "    #\"Renamed Columns9\" = Table.RenameColumns(#\"Removed Columns5\",{{\"Industry.1\", \"Industry\"}})",
+                "in",
+                "    #\"Renamed Columns9\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_c9650a36-d05d-4cfa-a3ce-15ba2c2651b5",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "f7c0b5d2-fefa-48e8-be66-05fbeb788fac",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "eb198fa0-d5b3-45d9-a228-a446c8fbf43c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "fb01746e-3b56-4786-acdb-51d1df72ccfd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e9b8b4a4-a214-481d-8036-fc5c65bc7332",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "8b2dcc51-fef1-4650-9985-790c957bd4bd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "806d7237-8ac0-471e-8200-62ef712ef21f",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "0c9742c3-fd1e-49a5-85d4-dbb9c10cca80",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "90a9d1bc-c15d-4dc7-bd1d-cc5320efb098",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "ee8973cc-c22a-43e4-a250-0c7175133eb8",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "01244751-05dd-4a9f-9ab7-e0e1ed501a61",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "1c348016-8c3c-48b7-949f-a71fd33f226e",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "077aed3b-d9f2-41c1-b8e2-346dfff5a1c6"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "04ae0e49-9351-422d-b9fe-e96e72c15173",
+        "partitions": [
+          {
+            "name": "LocalDateTable_c9650a36-d05d-4cfa-a3ce-15ba2c2651b5",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('UAE Data 2(uae_data_jobs)'[Date Posted])), 1, 1), Date(Year(MAX('UAE Data 2(uae_data_jobs)'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_5f16bf78-4692-4088-918f-b37825c8edd1",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "57a7e1cb-23e9-444a-9c2f-1b91a9aab8d4",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "257e8553-9aa9-4657-af78-a3b0e15149e7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "39116251-3f60-478a-b491-4989758c88bd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "70e49794-9d62-49f8-a0c7-4a3657a21bd1",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "5cf1216f-a6c3-456d-9b69-8327671c76ff",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "232030ff-f797-41db-b6dc-ee27e5b3f4b8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "bee29abe-a93a-4af4-8d1f-0708888f6d8c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "326428cc-5369-4118-b946-601305b1cce5",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "1b75a103-2d56-4dc3-a0cc-cf31ceae9a6c",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "38efca34-57be-41e4-8e9e-62e2267c28cc",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "49d774d0-aaf7-4373-8f2a-38f872388e5b",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "b232dc86-afc6-41aa-971f-e764d3e4396a"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "21b0d649-f7e3-4f00-b33d-ffd2beee8576",
+        "partitions": [
+          {
+            "name": "LocalDateTable_5f16bf78-4692-4088-918f-b37825c8edd1",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('USA Data 2 (search_results)'[Date Posted])), 1, 1), Date(Year(MAX('USA Data 2 (search_results)'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_afb66b0a-32f7-478f-a310-1cbbee69fa51",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "9f3e9021-e3a4-4c80-a680-b9c22c619749",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "4674ce8d-50e5-45b2-834c-7ee2bdc08ffb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "4081350d-0980-457e-b31c-a5274e1aee5b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "5c9ba527-1c61-4f70-a29e-c0e769ccbca9",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "85ae9042-60f5-430d-bf5a-65e052f80122",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "88418348-951f-440f-b2ea-3e9a2cb9bdc8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "73585962-5a55-48d6-9c85-ff60d090899c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "9883782c-62b7-44a1-ae6a-f71851ef6d54",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "87a00f4e-893c-4988-ab66-754607b23592",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "b4e8a68b-7d2a-46a5-9e92-d097d4cb4be8",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "307f164d-f6b0-4673-ae3e-576178147e43",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "3b9010af-994d-4fb6-94b4-53b65623ca37"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "4e616eae-cf38-466b-b655-721465cbfde4",
+        "partitions": [
+          {
+            "name": "LocalDateTable_afb66b0a-32f7-478f-a310-1cbbee69fa51",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('UAE Data 1(uae_jobs)'[Date Posted])), 1, 1), Date(Year(MAX('UAE Data 1(uae_jobs)'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_c129e496-748e-48c5-bd28-7ef49d354ca0",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "59e51b3b-bab1-46d0-8824-a018db559930",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "73994046-41f6-406f-933a-0da34809e19d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "21667cec-9574-42ac-8264-c2bb9deef6ea",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "36befdfb-405c-44e1-b118-7388d1cd66d0",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "8f8fda25-351c-4459-94f5-7a4dfa5be30d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "410884fc-3624-4e25-bee2-5f6d7dcad9b0",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "2a7cd6a5-614f-48db-9dfa-018e0ba29bf0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "770fef47-37c1-4a59-9670-63077dce7007",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "2c42df15-d8a0-4b31-86bf-750cbc38e756",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "346e7506-73c9-4dcb-b3be-fb78744f02e9",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "5313bba8-0129-4296-97f2-be9e5e08ef23",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "095fc487-51c0-4810-97e8-961447628506"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "43feace2-552c-4e9f-a389-f9e1b3c7a816",
+        "partitions": [
+          {
+            "name": "LocalDateTable_c129e496-748e-48c5-bd28-7ef49d354ca0",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('USA Data 3 (us_jobs)'[Date Posted])), 1, 1), Date(Year(MAX('USA Data 3 (us_jobs)'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Appended Model",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Job ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a5df1b11-44d1-47ea-858e-d81702270704",
+            "sourceColumn": "Job ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Job Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f4752260-6ea0-4eb0-847a-0872ec89536e",
+            "sourceColumn": "Job Title",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a9884d61-bf7d-46e9-9639-44bd92ba3117",
+            "sourceColumn": "City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "422bbb84-6e2c-4018-8809-66667c9a5b1d",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "72198a95-1f2f-4c61-84bb-01f18bee9e76",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date Posted",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "f4ef2673-5802-4dcd-86e8-cfe7bc545cfa",
+            "sourceColumn": "Date Posted",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_397a19d7-e863-4fac-bfbb-87612879650f"
+                },
+                "isDefault": true,
+                "relationship": "95b28c59-92fa-4c7c-a709-45e7f43b6633"
+              }
+            ]
+          },
+          {
+            "name": "Job Description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "39c7ff8d-a294-4ce7-b9a4-5c7dc2808d08",
+            "sourceColumn": "Job Description",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Skill Requirements",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1b93428f-7266-48ad-9e2d-46d88743798f",
+            "sourceColumn": "Skill Requirements",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c46420e5-4492-41d3-9dda-38dd02997b3b",
+            "sourceColumn": "Industry",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fe77cf03-be6d-4a2c-a758-6772d81551b6",
+        "measures": [
+          {
+            "name": "Total Job Postings",
+            "expression": "count('Appended Model'[Job Title])",
+            "formatString": "0",
+            "lineageTag": "dce11c22-aec5-42da-aa71-6a956a54937d"
+          },
+          {
+            "name": "First Industry max per Industry 2",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "expression": [
+              "",
+              "MAXX(",
+              "\tKEEPFILTERS(VALUES('Appended Model'[Industry])),",
+              "\tCALCULATE(MIN('Appended Model'[Industry]))",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "MeasureTemplate",
+                "type": "json",
+                "value": {
+                  "daxTemplateName": "MaxPerCategory",
+                  "version": 0
+                }
+              }
+            ],
+            "lineageTag": "c2437660-828b-4d42-9fbd-b4e7e71133ce"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Appended Model",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.Combine({#\"USA Data 1 (us_gov_analyst_jobs\", #\"USA Data 2 (search_results)\", #\"USA Data 3 (us_jobs)\", #\"UAE Data 1(uae_jobs)\", #\"UAE Data 2(uae_data_jobs)\"})",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_397a19d7-e863-4fac-bfbb-87612879650f",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "ce2f9a80-35ea-4259-b15a-add91fb06af6",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "a7a6aaed-941a-4ddc-9421-f45af0b01c20",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "acccc0f6-ebf6-4b56-b122-22f2e55ff65d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c9c053ab-5324-42e5-9b38-9f255b1e650b",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "913f2c1d-b016-47d6-87d7-254eacae0e66",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "3feff530-2ffb-46f8-ba6d-b4d366eb3b26",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "3525efe3-075b-4025-b53c-91eead044f20",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "139aee4c-7b77-4f9a-a7da-d4937c029900",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "ad7d5132-73de-4f43-bbcc-585c118788f3",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "4f0ce077-b5f5-4683-9e2b-3465b9a14004",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "08d05687-9016-4759-9a24-e262aff8de1a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "569471fa-33b3-408f-82ed-76bd0a7dee74"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "9b88d4af-faad-4c6c-9add-bf5f10faefce",
+        "partitions": [
+          {
+            "name": "LocalDateTable_397a19d7-e863-4fac-bfbb-87612879650f",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Appended Model'[Date Posted])), 1, 1), Date(Year(MAX('Appended Model'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_d04acf70-a08f-4996-a956-f2e3b5491239",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "a9e3f677-4246-4511-9d15-310934ce40b3",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "814c0e86-e67b-4740-b2c7-efc34c63a3db",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "ef91a509-feb5-4158-8bbc-80c935b13779",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f1dab0d7-3b57-4664-9723-f9710e2f86f9",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "e1499104-4350-43e2-8c3b-7624e9c431aa",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "904f016d-ee0d-43e2-a8f6-55d704a7cc79",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "c83f876f-5534-4063-b78b-b040f89234d7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "9c81b129-6493-4522-9137-25652b905f17",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "6892182b-e87d-4415-bc24-7326629ae232",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "7b08ee33-a79f-488a-b89a-bad68518a1a3",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "fcaddb8e-dee8-432d-805e-282b17951a96",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "aad3b430-2e96-4b88-a166-9f0d56a5e54f"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "31ba51b2-4d6d-436c-965e-1dfc4b2c1366",
+        "partitions": [
+          {
+            "name": "LocalDateTable_d04acf70-a08f-4996-a956-f2e3b5491239",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('USA Data 1 (us_gov_analyst_jobs'[Date Posted])), 1, 1), Date(Year(MAX('USA Data 1 (us_gov_analyst_jobs'[Date Posted])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
